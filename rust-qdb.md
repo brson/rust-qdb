@@ -1,23 +1,6 @@
 # Rust Quotes from Mozilla QDB
 
-Total quotes: 57
-
----
-
-## Quote #3109
-
-```
-* timeless cries
-<timeless> my minefield blew up
-<shaver> does what it says on the tin
-<Neil> timeless: don't click on any of the squares next to an '8' next time ;-)
-```
-
-- **Rating:** 24 (24 votes)
-- **Score:** 25.00
-- **Submitted:** 2007-11-19 11:34:29
-- **Approved:** true
-- **Tags:** rust
+Total quotes: 56
 
 ---
 

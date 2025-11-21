@@ -10,8 +10,12 @@ pub fn filter_rust_quotes(quotes: &[Quote]) -> Vec<Quote> {
     let rust_pattern = Regex::new(r"(?i)\brust\b").unwrap();
     let false_positive_pattern = Regex::new(r"(?i)\b(trust|frustrat|rusty)\b").unwrap();
 
+    // Blacklist of quote IDs that are incorrectly tagged.
+    let blacklist = [3109];
+
     quotes
         .iter()
+        .filter(|quote| !blacklist.contains(&quote.id))
         .filter(|quote| is_rust_related(quote, &rust_pattern, &false_positive_pattern))
         .cloned()
         .collect()
