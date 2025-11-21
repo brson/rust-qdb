@@ -182,6 +182,18 @@
     "tags": []
   },
   {
+    "id": 6818,
+    "body": "<seth> so what sucks less\n<seth> propagating const to a gazillion places (the right solution)\n<seth> or using const_cast in one place (the pragmatic solution)\n<RyanVM> besides being tedious, what's wrong with the former?\n<seth> RyanVM: it creates a huge patch that touches tons of stuff, basically\n<Jesse> seth: or switch to Rust, where immutable is the default. (may involve changing slightly more code)\n<seth> Jesse: that'd be my preferred solution, trust me\n<mjrosenb> seth: do the right thing!\n<mjrosenb> seth: unless it changes code that i'll need to rebase on top of :-p",
+    "notes": null,
+    "rating": 0,
+    "votes": 4,
+    "submitted": "2013-03-01 23:13:19",
+    "approved": true,
+    "flagged": false,
+    "score": 1.0,
+    "tags": []
+  },
+  {
     "id": 6819,
     "body": "-!- sanxiyn has joined #rust\n * sanxiyn is at home\n<sanxiyn> At work, I couldn't join here because security team started to block chat.mibbit.com because it is \"chat site\"\n<sanxiyn> I filed a complaint\n<sanxiyn> Last year, security team blocked GitHub because it is \"file sharing site\"",
     "notes": null,

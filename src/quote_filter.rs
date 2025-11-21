@@ -23,20 +23,37 @@ fn is_rust_related(quote: &Quote, rust_pattern: &Regex, false_positive_pattern: 
         return true;
     }
 
-    // Check body for rust keyword
-    if rust_pattern.is_match(&quote.body) {
-        // Exclude false positives
-        if !false_positive_pattern.is_match(&quote.body) {
-            return true;
-        }
+    // Check body for rust keyword that's not part of a false positive.
+    // We need to check if ANY match of "rust" is standalone, not just if there are no false positives.
+    if has_standalone_rust(&quote.body, rust_pattern, false_positive_pattern) {
+        return true;
     }
 
     // Check notes for rust keyword
     if let Some(notes) = &quote.notes {
-        if rust_pattern.is_match(notes) && !false_positive_pattern.is_match(notes) {
+        if has_standalone_rust(notes, rust_pattern, false_positive_pattern) {
             return true;
         }
     }
 
+    false
+}
+
+/// Checks if text contains "rust" that is not part of "trust", "frustrat", or "rusty".
+fn has_standalone_rust(text: &str, rust_pattern: &Regex, false_positive_pattern: &Regex) -> bool {
+    for rust_match in rust_pattern.find_iter(text) {
+        let start = rust_match.start();
+        let end = rust_match.end();
+
+        // Check if this "rust" match is part of a false positive by looking at surrounding context
+        let context_start = start.saturating_sub(5);
+        let context_end = (end + 5).min(text.len());
+        let context = &text[context_start..context_end];
+
+        // If the context around this specific match doesn't contain false positives, it's valid
+        if !false_positive_pattern.is_match(context) {
+            return true;
+        }
+    }
     false
 }

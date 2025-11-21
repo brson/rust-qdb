@@ -1,6 +1,6 @@
 # Rust Quotes from Mozilla QDB
 
-Total quotes: 56
+Total quotes: 57
 
 ---
 
@@ -258,6 +258,27 @@ Total quotes: 56
 - **Approved:** true
 
 **Notes:** http://en.wikipedia.org/wiki/Levenshtein_distance
+
+---
+
+## Quote #6818
+
+```
+<seth> so what sucks less
+<seth> propagating const to a gazillion places (the right solution)
+<seth> or using const_cast in one place (the pragmatic solution)
+<RyanVM> besides being tedious, what's wrong with the former?
+<seth> RyanVM: it creates a huge patch that touches tons of stuff, basically
+<Jesse> seth: or switch to Rust, where immutable is the default. (may involve changing slightly more code)
+<seth> Jesse: that'd be my preferred solution, trust me
+<mjrosenb> seth: do the right thing!
+<mjrosenb> seth: unless it changes code that i'll need to rebase on top of :-p
+```
+
+- **Rating:** 0 (4 votes)
+- **Score:** 1.00
+- **Submitted:** 2013-03-01 23:13:19
+- **Approved:** true
 
 ---
 
