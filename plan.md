@@ -5,9 +5,9 @@ The raw mozilla QDB is in qdb-src.
 We need to extract the contents to a more useful JSON format,
 stored in qdb-src/full-qdb.json;
 then filter out only the Rust content,
-store it in www/rust-qdb.json,
+store it in docs/rust-qdb.json,
 then write the Rust quotes to rust-qdb.md;
-then create a www/index.html with various filtering and searching options.
+then create a docs/index.html with various filtering and searching options.
 
 A brief description of the dump is in qdb-src/readme.txt.
 I don't remember the dump format offhand and a big part of the project
@@ -57,8 +57,8 @@ Create rust-qdb.md with readable format:
 - Tags
 
 ### 4. HTML Interface
-Build www/index.html with:
-- Load quotes from www/rust-qdb.json
+Build docs/index.html with:
+- Load quotes from docs/rust-qdb.json
 - Client-side search/filter
 - Sort by: rating, date, votes
 - Display metadata and tags

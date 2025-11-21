@@ -7,8 +7,8 @@ from the Mozilla IRC network
 at quotes.burntelectrons.org.
 
 The quotes are presented in markdown in rust-qdb.md,
-and via searchable HTML in www/index.html,
-with the raw quotes stored in www/rust-qdb.json.
+and via searchable HTML in docs/index.html,
+with the raw quotes stored in docs/rust-qdb.json.
 
 Many thanks to Grey Hodge,
 the maintainer of the Mozilla QDB,

@@ -28,8 +28,8 @@ fn main() -> Result<()> {
 
     // Stage 3: Save Rust quotes JSON
     println!("\n[3/4] Saving Rust quotes JSON...");
-    fs::create_dir_all("www")?;
-    let rust_json_path = "www/rust-qdb.json";
+    fs::create_dir_all("docs")?;
+    let rust_json_path = "docs/rust-qdb.json";
     let rust_json_str = serde_json::to_string_pretty(&rust_quotes)?;
     fs::write(rust_json_path, rust_json_str)?;
     println!("  Saved to {}", rust_json_path);
@@ -44,7 +44,7 @@ fn main() -> Result<()> {
     println!("  - {} (all quotes)", full_json_path);
     println!("  - {} (Rust quotes)", rust_json_path);
     println!("  - rust-qdb.md (markdown)");
-    println!("\nView the web interface at www/index.html");
+    println!("\nView the web interface at docs/index.html");
 
     Ok(())
 }
