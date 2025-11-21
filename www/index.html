@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rust Quotes - Mozilla QDB</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #ce422b;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            background: white;
+        }
+
+        .stats {
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .quote {
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background: #fafafa;
+        }
+
+        .quote-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ce422b;
+        }
+
+        .quote-id {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ce422b;
+        }
+
+        .quote-rating {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .rating-value {
+            font-weight: bold;
+            color: #ce422b;
+        }
+
+        .quote-body {
+            background: white;
+            padding: 15px;
+            border-radius: 4px;
+            border-left: 4px solid #ce422b;
+            margin-bottom: 15px;
+            white-space: pre-wrap;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+        }
+
+        .quote-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: #ce422b;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+        }
+
+        .notes {
+            margin-top: 15px;
+            padding: 10px;
+            background: #fff8e1;
+            border-radius: 4px;
+            font-size: 13px;
+            font-style: italic;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .controls {
+                flex-direction: column;
+            }
+
+            .quote-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rust Quotes from Mozilla QDB</h1>
+        <p class="subtitle">Historic IRC conversations from the Mozilla network</p>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search quotes...">
+            </div>
+            <select id="sortSelect">
+                <option value="id">Sort by ID</option>
+                <option value="rating">Sort by Rating</option>
+                <option value="score">Sort by Score</option>
+                <option value="votes">Sort by Votes</option>
+                <option value="date">Sort by Date</option>
+            </select>
+            <select id="orderSelect">
+                <option value="desc">Descending</option>
+                <option value="asc">Ascending</option>
+            </select>
+        </div>
+
+        <div class="stats" id="stats">Loading...</div>
+
+        <div id="quotes">
+            <div class="loading">Loading quotes...</div>
+        </div>
+    </div>
+
+    <script>
+        let allQuotes = [];
+        let filteredQuotes = [];
+
+        async function loadQuotes() {
+            try {
+                const response = await fetch('rust-qdb.json');
+                allQuotes = await response.json();
+                filteredQuotes = allQuotes;
+                updateDisplay();
+            } catch (error) {
+                document.getElementById('quotes').innerHTML =
+                    '<div class="no-results">Failed to load quotes: ' + error.message + '</div>';
+            }
+        }
+
+        function filterAndSort() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const sortBy = document.getElementById('sortSelect').value;
+            const order = document.getElementById('orderSelect').value;
+
+            // Filter
+            filteredQuotes = allQuotes.filter(quote => {
+                if (!searchTerm) return true;
+                return quote.body.toLowerCase().includes(searchTerm) ||
+                       (quote.notes && quote.notes.toLowerCase().includes(searchTerm)) ||
+                       quote.tags.some(tag => tag.toLowerCase().includes(searchTerm));
+            });
+
+            // Sort
+            filteredQuotes.sort((a, b) => {
+                let aVal, bVal;
+                switch (sortBy) {
+                    case 'rating':
+                        aVal = a.rating;
+                        bVal = b.rating;
+                        break;
+                    case 'score':
+                        aVal = a.score;
+                        bVal = b.score;
+                        break;
+                    case 'votes':
+                        aVal = a.votes;
+                        bVal = b.votes;
+                        break;
+                    case 'date':
+                        aVal = new Date(a.submitted);
+                        bVal = new Date(b.submitted);
+                        break;
+                    default:
+                        aVal = a.id;
+                        bVal = b.id;
+                }
+                return order === 'desc' ? bVal - aVal : aVal - bVal;
+            });
+
+            updateDisplay();
+        }
+
+        function updateDisplay() {
+            // Update stats
+            document.getElementById('stats').textContent =
+                `Showing ${filteredQuotes.length} of ${allQuotes.length} quotes`;
+
+            // Render quotes
+            const quotesContainer = document.getElementById('quotes');
+            if (filteredQuotes.length === 0) {
+                quotesContainer.innerHTML =
+                    '<div class="no-results">No quotes found matching your criteria.</div>';
+                return;
+            }
+
+            quotesContainer.innerHTML = filteredQuotes.map(quote => `
+                <div class="quote">
+                    <div class="quote-header">
+                        <div class="quote-id">Quote #${quote.id}</div>
+                        <div class="quote-rating">
+                            <span class="rating-value">Rating: ${quote.rating}</span>
+                            ${quote.votes > 0 ? `<span>(${quote.votes} votes)</span>` : ''}
+                            <span>Score: ${quote.score.toFixed(2)}</span>
+                        </div>
+                    </div>
+                    <div class="quote-body">${escapeHtml(quote.body)}</div>
+                    <div class="quote-meta">
+                        <div class="meta-item">
+                            <strong>Submitted:</strong> ${formatDate(quote.submitted)}
+                        </div>
+                        ${quote.tags.length > 0 ? `
+                            <div class="meta-item">
+                                <strong>Tags:</strong>
+                                <div class="tags">
+                                    ${quote.tags.map(tag => `<span class="tag">${escapeHtml(tag)}</span>`).join('')}
+                                </div>
+                            </div>
+                        ` : ''}
+                    </div>
+                    ${quote.notes ? `<div class="notes"><strong>Notes:</strong> ${escapeHtml(quote.notes)}</div>` : ''}
+                </div>
+            `).join('');
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function formatDate(dateStr) {
+            const date = new Date(dateStr);
+            return date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
+        }
+
+        // Event listeners
+        document.getElementById('searchInput').addEventListener('input', filterAndSort);
+        document.getElementById('sortSelect').addEventListener('change', filterAndSort);
+        document.getElementById('orderSelect').addEventListener('change', filterAndSort);
+
+        // Load quotes on page load
+        loadQuotes();
+    </script>
+</body>
+</html>
