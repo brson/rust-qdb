@@ -3,12 +3,27 @@ use regex::Regex;
 
 /// Filters quotes for Rust-related content.
 ///
-/// A quote is considered Rust-related if it has a #rust tag OR
-/// contains "rust" (case-insensitive) but NOT as part of "trust",
+/// A quote is considered Rust-related if it has a Rust-related tag
+/// (rust, #rust, #rust-internals, #rust-offtopic, servo, #servo, etc.)
+/// OR contains "rust" (case-insensitive) but NOT as part of "trust",
 /// "frustration", or "rusty".
 pub fn filter_rust_quotes(quotes: &[Quote]) -> Vec<Quote> {
     let rust_pattern = Regex::new(r"(?i)\brust\b").unwrap();
     let false_positive_pattern = Regex::new(r"(?i)\b(trust|frustrat|rusty)\b").unwrap();
+
+    // Rust-related tags to include.
+    let rust_tags = [
+        "#rust",
+        "rust",
+        "rustbot",
+        "rusti",
+        "#rust-internals",
+        "#rust-offtopic",
+        "rust-offtopic",
+        "#servo",
+        "servo",
+        "#servo-offtopic",
+    ];
 
     // Blacklist of quote IDs that are incorrectly tagged.
     let blacklist = [3109];
@@ -16,14 +31,17 @@ pub fn filter_rust_quotes(quotes: &[Quote]) -> Vec<Quote> {
     quotes
         .iter()
         .filter(|quote| !blacklist.contains(&quote.id))
-        .filter(|quote| is_rust_related(quote, &rust_pattern, &false_positive_pattern))
+        .filter(|quote| is_rust_related(quote, &rust_pattern, &false_positive_pattern, &rust_tags))
         .cloned()
         .collect()
 }
 
-fn is_rust_related(quote: &Quote, rust_pattern: &Regex, false_positive_pattern: &Regex) -> bool {
-    // Check for #rust tag
-    if quote.tags.iter().any(|tag| tag.to_lowercase() == "rust") {
+fn is_rust_related(quote: &Quote, rust_pattern: &Regex, false_positive_pattern: &Regex, rust_tags: &[&str]) -> bool {
+    // Check for Rust-related tags.
+    if quote.tags.iter().any(|tag| {
+        let tag_lower = tag.to_lowercase();
+        rust_tags.iter().any(|rust_tag| rust_tag.to_lowercase() == tag_lower)
+    }) {
         return true;
     }
 

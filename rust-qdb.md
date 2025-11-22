@@ -1,6 +1,25 @@
 # Rust Quotes from Mozilla QDB
 
-Total quotes: 66
+Total quotes: 143
+
+---
+
+## Quote #5718
+
+```
+<graydon> ow. my friend just broke my funny bone.
+<graydon> "Have you heard the funny anagram for Banach-Tarski?"
+<tjc> nope
+<graydon> "Banach-Tarski Banach-Tarski"
+<tjc> nyuk nyuk
+<graydon> a joke that cannot possibly end well
+```
+
+- **Rating:** 12 (12 votes)
+- **Score:** 13.00
+- **Submitted:** 2011-04-12 17:21:23
+- **Approved:** true
+- **Tags:** #rust, math
 
 ---
 
@@ -35,6 +54,36 @@ Total quotes: 66
 
 ---
 
+## Quote #6156
+
+```
+<nmatsakis> are rustbots broken in some way?  webpage looks...odd
+<marijn> win1 is wedged, mac1 is missing, and i had to restart earlier to get any response at all. in other words, nothing out of the usual
+```
+
+- **Rating:** 3 (5 votes)
+- **Score:** 2.50
+- **Submitted:** 2012-01-03 19:50:48
+- **Approved:** true
+- **Tags:** #rust, rustbot
+
+---
+
+## Quote #6221
+
+```
+<graydon> you know I left the math program in part because I was perpetually annoyed at math's unwillingness to be syntactically unambiguous, right?
+<tjc> you know you're a nerd when math isn't precise enough for you
+```
+
+- **Rating:** 20 (20 votes)
+- **Score:** 21.00
+- **Submitted:** 2012-01-26 21:23:00
+- **Approved:** true
+- **Tags:** #rust
+
+---
+
 ## Quote #6293
 
 ```
@@ -51,6 +100,46 @@ Total quotes: 66
 - **Score:** 9.00
 - **Submitted:** 2012-02-29 02:39:47
 - **Approved:** true
+
+---
+
+## Quote #6409
+
+```
+<graydon> dherman: list::mk, list::hd, list::tl :)
+<dherman> sr, mks sns
+<graydon> ok: make, head and tail if you like Mr. Vowelpants
+<graydon> this is a solved problem for lists
+<dherman> I kid!
+* lkuper is totally going to start calling dherman "Mr. Vowelpants"
+<dherman> it wouldn't be my first -pants title
+<lkuper> oh, pardon: "Dr. Vowelpants"
+```
+
+- **Rating:** 10 (10 votes)
+- **Score:** 11.00
+- **Submitted:** 2012-04-28 07:17:07
+- **Approved:** true
+- **Tags:** #rust, dherman, graydon, lkuper
+
+---
+
+## Quote #6494
+
+```
+* lkuper wonders what graydon's law in fact is
+<graydon> "nothing every works right"
+<graydon> *ever
+<Wensley|bstrie> haha
+<Wensley|bstrie> a self-affirming law
+<graydon> quite
+```
+
+- **Rating:** 15 (15 votes)
+- **Score:** 16.00
+- **Submitted:** 2012-07-10 18:25:34
+- **Approved:** true
+- **Tags:** #rust, bstrie, graydon, lkuper
 
 ---
 
@@ -84,6 +173,54 @@ Total quotes: 66
 - **Rating:** 8 (8 votes)
 - **Score:** 9.00
 - **Submitted:** 2012-07-19 17:58:13
+- **Approved:** true
+- **Tags:** #rust
+
+---
+
+## Quote #6523
+
+```
+<pfox__> how do you type 'bikeshed' in dvorak? ;)
+```
+
+- **Rating:** -1 (3 votes)
+- **Score:** 0.67
+- **Submitted:** 2012-08-06 23:07:42
+- **Approved:** true
+- **Tags:** #rust
+
+---
+
+## Quote #6563
+
+```
+<brson> oh, if only i had valground 2 hours ago
+<tjc> is "valground" the official past tense of "valgrind"?
+<brson> yes, officially
+```
+
+- **Rating:** 5 (5 votes)
+- **Score:** 6.00
+- **Submitted:** 2012-09-14 06:06:35
+- **Approved:** true
+- **Tags:** #servo
+
+---
+
+## Quote #6573
+
+```
+<bstrie> brson: do `do` statements have return values?
+<nejucomo> bstrie: do is syntactic sugar for an expression, and every expression evaluates to a value.
+<nejucomo> So yes, although calling them "return values" may be misleading, because there's a function called "return".
+...
+<nejucomo> Doh!  I thought this was the haskell channel!  Please completely disregard what I said.
+```
+
+- **Rating:** 12 (12 votes)
+- **Score:** 13.00
+- **Submitted:** 2012-09-19 18:53:23
 - **Approved:** true
 - **Tags:** #rust
 
@@ -160,6 +297,21 @@ Total quotes: 66
 
 ---
 
+## Quote #6625
+
+```
+<burg> I love naming upstream as 'ups'
+<burg> git pushups!
+```
+
+- **Rating:** 1 (3 votes)
+- **Score:** 1.50
+- **Submitted:** 2012-10-23 21:42:42
+- **Approved:** true
+- **Tags:** #servo
+
+---
+
 ## Quote #6636
 
 ```
@@ -173,6 +325,43 @@ Total quotes: 66
 - **Submitted:** 2012-10-31 18:08:22
 - **Approved:** true
 - **Tags:** #rust, bstrie, kspaans
+
+---
+
+## Quote #6650
+
+```
+<pcwalton> basically you have something like ~ClosedFile, and your open() function takes a ~ClosedFile by move and returns an ~OpenFile
+<pcwalton> this pattern is called "session types"
+<burg> pcwalton: I usually associate the term session types with the pi calculus
+<lkuper> I associate "session types" with phil wadler taking off his shirt
+```
+
+- **Rating:** 6 (6 votes)
+- **Score:** 7.00
+- **Submitted:** 2012-11-07 19:19:37
+- **Approved:** true
+- **Tags:** #rust
+
+---
+
+## Quote #6652
+
+```
+<pcwalton> I copy and pasted the integer literal inference code to make floating point literal code and then did a search and replace int -> float
+<pcwalton> and "intersection" changed to "floatersection"
+<pcwalton>         // Otherwise, take the floatersection of the two sets of possible types.
+<pcwalton>         let floatersection = floatersection(a_pt, b_pt);
+<pcwalton>         if *floatersection == INT_TY_SET_EMPTY {
+<pcwalton>             return Err(ty::terr_no_floategral_type);
+<pcwalton>         }
+```
+
+- **Rating:** 19 (19 votes)
+- **Score:** 20.00
+- **Submitted:** 2012-11-08 19:44:48
+- **Approved:** true
+- **Tags:** #rust, floatersection, paste
 
 ---
 
@@ -207,6 +396,23 @@ Total quotes: 66
 - **Tags:** #rust, english, fanny
 
 **Notes:** http://en.wikipedia.org/wiki/Fanny#In_slang
+
+---
+
+## Quote #6683
+
+```
+<graydon> I guess I added that code!
+<graydon> yay revision control telling you to blame yourself
+<tjc> I blame myself anyway
+<tjc> that's one thing I don't need software for ;-)
+```
+
+- **Rating:** 7 (7 votes)
+- **Score:** 8.00
+- **Submitted:** 2012-11-27 22:55:33
+- **Approved:** true
+- **Tags:** #rust
 
 ---
 
@@ -257,6 +463,28 @@ Total quotes: 66
 - **Submitted:** 2013-02-26 18:45:56
 - **Approved:** true
 - **Tags:** rust
+
+---
+
+## Quote #6815
+
+```
+<bstrie> also apparently github is having a meetup tomorrow in pittsburgh
+<bstrie> I think this means that RUSTCON FEBRUARY '012 must happen coterminously
+<lkuper> bstrie: '012?
+<bstrie> lkuper: yes, pronounced "oh-twelve"
+<bstrie> we've learned from the mistakes of y2k
+<lkuper> bstrie: ...okay, carry on
+<benh> I can't wait for rustcon '013 next year
+```
+
+- **Rating:** 7 (7 votes)
+- **Score:** 8.00
+- **Submitted:** 2013-02-27 20:45:37
+- **Approved:** true
+- **Tags:** #rust, benh, bstrie, lkuper
+
+**Notes:** Conversation took place in February 2013.
 
 ---
 
@@ -352,6 +580,97 @@ Total quotes: 66
 
 ---
 
+## Quote #6840
+
+```
+<brson> ugh. I'm not going to try to fix the bsd bots. I don't understand how this works
+<pcwalton> :( we need graydon
+<strcat> graydon.clone()
+<benh> strcat: I tried saying let graydon2 = graydon; let graydon3 = graydon; etc a bunch but it turns out that only moved him. He wasn't actually more productive afterwards, just really mad.
+```
+
+- **Rating:** 15 (15 votes)
+- **Score:** 16.00
+- **Submitted:** 2013-03-14 19:33:43
+- **Approved:** true
+- **Tags:** #rust, benh, brson, graydon, pcwalton, strcat
+
+**Notes:** who could have expected that graydon would be so unique
+
+---
+
+## Quote #6841
+
+```
+<jamil> anyway, what is the meaning of this error: illegal borrow: creating immutable alias to mutable field
+<jamil> why is it illegal ?
+<bstrie> jamil: are you on 0.5?
+<jamil> bstrie: yep
+<bstrie> jamil: the meaning of that error is boundless despair. it urges you to upgrade to the latest git master
+```
+
+- **Rating:** 5 (5 votes)
+- **Score:** 6.00
+- **Submitted:** 2013-03-14 20:53:17
+- **Approved:** true
+- **Tags:** #rust
+
+**Notes:** The never ending joy of having to many language changes since last release.
+
+---
+
+## Quote #6847
+
+```
+<graydon> I think it'll be a little sad if declaring a constant requires you to write a word you are morally repulsed by
+```
+
+- **Rating:** 4 (4 votes)
+- **Score:** 5.00
+- **Submitted:** 2013-03-18 23:01:30
+- **Approved:** true
+- **Tags:** #rust
+
+---
+
+## Quote #6848
+
+```
+<benh> I used to assume that stack unwinding is magic
+<benh> following along the discussion about return-based unwinding, I now know that it's not actually magic, but it's handled by dwarves, which seems close enough.
+```
+
+- **Rating:** 19 (19 votes)
+- **Score:** 20.00
+- **Submitted:** 2013-03-19 21:09:13
+- **Approved:** true
+- **Tags:** #rust, magic
+
+---
+
+## Quote #6853
+
+```
+<bstrie> oh god damn it
+<bstrie> I had to examine the responses of the failed http requests to determine that blogger suddenly won't allow me to load any page because I'm socks'ing through my linode right now
+<bstrie> it's supposed to show a captcha, but it can't because of the aforementioned stupid goddamn loading screen
+<bstrie> my rage is infinite
+<bstrie> I get to watch the error count in firebug increment in real-time as this page reloads the useless, undisplayed captcha screen every 0.5 seconds
+<kimundi> Use that infinite power for good!
+<lkuper> bstrie: have a baby ferret. http://cuteoverload.com/2011/08/23/baby-ferret-dreams-of-changing-the-world/
+<bstrie> lkuper: I will raise it to be an attack ferret and unleash it upon the architects of this website
+<bstrie> I will instill the essence of vengeance in its heart
+<bstrie> kimundi: indeed, if only you could build a dyson sphere around me right now to harness all this fury that I am emanating
+```
+
+- **Rating:** 1 (1 votes)
+- **Score:** 2.00
+- **Submitted:** 2013-03-22 14:43:20
+- **Approved:** true
+- **Tags:** #rust, bstrie, kimundi, lkuper
+
+---
+
 ## Quote #6863
 
 ```
@@ -371,6 +690,20 @@ Total quotes: 66
 - **Submitted:** 2013-04-02 20:46:24
 - **Approved:** true
 - **Tags:** #rust, bieber, tjc
+
+---
+
+## Quote #6869
+
+```
+<benh> this is incidentally when i curse stackoverflow for ruining google searches for info on stack overflows
+```
+
+- **Rating:** 24 (24 votes)
+- **Score:** 25.00
+- **Submitted:** 2013-04-04 17:33:43
+- **Approved:** true
+- **Tags:** #rust
 
 ---
 
@@ -405,6 +738,76 @@ Total quotes: 66
 
 ---
 
+## Quote #6895
+
+```
+* nmatsakis wonders why he is bothering to think about this. It seems like the def'n of "ship has sailed" in some sense.
+<jclements> this dead cat is a ship that has sailed. We're sailing in a dead cat.
+<graydon> jclements: but crucially: _has it left the barn yet_?
+<graydon> if you've sailed the dead cat (or dead horse) out of the barn, I think maybe it's time to put it to .. bed?
+<graydon> mixed metaphors ahoy
+<jclements> I, for one, have no plans to share *my* bed with a sailing skinned cat/horse. I'm sure my wife would agree.
+```
+
+- **Rating:** 3 (7 votes)
+- **Score:** 2.00
+- **Submitted:** 2013-04-25 20:45:46
+- **Approved:** true
+- **Tags:** #rust
+
+---
+
+## Quote #6899
+
+```
+<dbaupp> 50 comments on 4819. yay, bikeshedding! :P
+<just_bstrie> dbaupp: I don't think that any discussion involving the word "quaternion" can be classified  as bikeshedding
+<jensnockert> just_bstrie: I think all discussions that involve the word "Quaternion" can be classified as bikeshedding.
+```
+
+- **Rating:** 5 (5 votes)
+- **Score:** 6.00
+- **Submitted:** 2013-04-29 13:43:39
+- **Approved:** true
+- **Tags:** #rust, quaternion
+
+---
+
+## Quote #6900
+
+```
+<dymk> so I guess that fail!() won't also come with a stack trace any time soon then, eh?
+<erickt1> dymk: no, but you can use gdb and break on upcall_fail
+<erickt1> then do bt to get a stack trace
+<dymk> ah, gdb
+<dymk> my liver can take the continued abuse, alright
+<dymk> ;)
+```
+
+- **Rating:** 3 (3 votes)
+- **Score:** 4.00
+- **Submitted:** 2013-04-30 05:39:21
+- **Approved:** true
+- **Tags:** #rust
+
+---
+
+## Quote #6922
+
+```
+<doomlord> lifetime refers to borrowed pointers ?
+<bstrie> doomlord: a lifetime is essentially the potential scope of any given borrow
+<jack> that almost sounds like sage wisdom
+```
+
+- **Rating:** 23 (23 votes)
+- **Score:** 24.00
+- **Submitted:** 2013-05-13 16:33:58
+- **Approved:** true
+- **Tags:** #rust
+
+---
+
 ## Quote #6933
 
 ```
@@ -416,6 +819,23 @@ Total quotes: 66
 - **Submitted:** 2013-05-21 20:21:13
 - **Approved:** true
 - **Tags:** #rust, exceptions
+
+---
+
+## Quote #6937
+
+```
+<jdm> hooray, I fixed the leak!
+<jdm> no we only leak a rate of 10mb/s
+<jdm> *now
+<jdm> what would be mortifying in any other project is cause for success
+```
+
+- **Rating:** 8 (8 votes)
+- **Score:** 9.00
+- **Submitted:** 2013-05-22 16:55:41
+- **Approved:** true
+- **Tags:** #servo, jdm
 
 ---
 
@@ -469,6 +889,56 @@ Total quotes: 66
 
 ---
 
+## Quote #6971
+
+```
+<bstrie> is "complete" alias analysis undecidable?
+<bblum> yep
+<bstrie> ok :)
+<tjc> Rice's Theorem applies
+<tjc> every interesting static analysis is undecidable :-)
+<bstrie> haha
+<tjc> that's more or less what it really says
+<tjc> also known as the full employment theorem for compiler writers
+```
+
+- **Rating:** 13 (13 votes)
+- **Score:** 14.00
+- **Submitted:** 2013-06-11 21:49:52
+- **Approved:** true
+- **Tags:** #rust
+
+---
+
+## Quote #6993
+
+```
+<dbaupp> Does anyone know why vec::push_slow is #[inline(never)]?
+<bstrie> dbaupp: because then it wouldn't be slow
+```
+
+- **Rating:** 27 (27 votes)
+- **Score:** 28.00
+- **Submitted:** 2013-06-27 13:04:10
+- **Approved:** true
+- **Tags:** #rust
+
+---
+
+## Quote #7004
+
+```
+<pcwalton> macros are way better at generating code than trans is
+```
+
+- **Rating:** 8 (8 votes)
+- **Score:** 9.00
+- **Submitted:** 2013-07-02 22:54:07
+- **Approved:** true
+- **Tags:** #rust
+
+---
+
 ## Quote #7016
 
 ```
@@ -512,6 +982,24 @@ Total quotes: 66
 
 ---
 
+## Quote #7027
+
+```
+<sigma> yeh, they don't mention the word "alpha" anywhere in that article
+<cmr> pre-alpha!
+<Ms2ger> What's pre-alpha? Omega?
+<dbaupp> Ms2ger: ΰ
+<dbaupp> "GREEK SMALL LETTER UPSILON WITH DIALYTIKA AND TONOS" apparently
+```
+
+- **Rating:** 5 (11 votes)
+- **Score:** 2.25
+- **Submitted:** 2013-07-24 14:16:17
+- **Approved:** true
+- **Tags:** #rust
+
+---
+
 ## Quote #7036
 
 ```
@@ -527,6 +1015,41 @@ Total quotes: 66
 - **Tags:** graydon, pointer, rust
 
 **Notes:** During a discussion about unsafe pointers.
+
+---
+
+## Quote #7043
+
+```
+* cmr bed
+* strcat table
+<strcat> wait what?
+```
+
+- **Rating:** 6 (6 votes)
+- **Score:** 7.00
+- **Submitted:** 2013-08-03 09:03:59
+- **Approved:** true
+- **Tags:** #rust, cmr, strcat
+
+---
+
+## Quote #7044
+
+```
+<aatch> Also, this is groundwork for improving the inline asm.
+<Luqman> aatch: speaking of which, found a rather amusing use for asm! today
+<aatch> Luqman, oh?
+<Luqman> aatch: using it to insert nop's so we could hexedit the binary without messing up any offsets :P
+<aatch> Luqman, oh wow.
+<aatch> That is mad
+```
+
+- **Rating:** 13 (13 votes)
+- **Score:** 14.00
+- **Submitted:** 2013-08-03 12:32:25
+- **Approved:** true
+- **Tags:** #rust
 
 ---
 
@@ -550,6 +1073,20 @@ toddaaro> rusti: 2^8
 
 ---
 
+## Quote #7058
+
+```
+* bjz loves killing his babies
+```
+
+- **Rating:** 4 (14 votes)
+- **Score:** 1.67
+- **Submitted:** 2013-08-24 08:10:19
+- **Approved:** true
+- **Tags:** #rust, bjz, nocontext
+
+---
+
 ## Quote #7065
 
 ```
@@ -570,6 +1107,60 @@ toddaaro> rusti: 2^8
 
 ---
 
+## Quote #7105
+
+```
+<lkuper_> yeah, I'm a much bigger fan of "we are nice because it's the decent human thing to do".  That was the point of my post -- someone shouldn't have to be a big shot in the community to be able to say "be nice"
+<bstrie> lkuper_: btw that will be eight social capital dollars
+<lkuper_> cha-ching!
+<bstrie> but right now I'm in canada so I'll need that in loonies
+```
+
+- **Rating:** 3 (3 votes)
+- **Score:** 4.00
+- **Submitted:** 2013-10-07 03:17:40
+- **Approved:** true
+- **Tags:** #rust, bstrie, lkuper
+
+**Notes:** In the context of a discussion about "Matz is nice and so we are nice"
+
+---
+
+## Quote #7102
+
+```
+<amatus> >.<
+<amatus> i can't open /dev/null
+<amatus> BECAUSE IT'S NOT A FILE
+<amatus> this is the 2nd time i've coded everything up the "rustic" way and had to back down to raw libc calls!
+<mcpherrin> welcome to bugland, home of the bugs.  Would you like a bug with your bug?
+```
+
+- **Rating:** 4 (4 votes)
+- **Score:** 5.00
+- **Submitted:** 2013-10-01 03:15:12
+- **Approved:** true
+- **Tags:** #rust
+
+---
+
+## Quote #7066
+
+```
+<dpc> How does RustOS sound? :D
+<tjc> sounds like a snack food :-)
+<bstrie> haha
+<bstrie> thus was the downfall of the effort to write an OS in the Dorit programming language
+```
+
+- **Rating:** 9 (9 votes)
+- **Score:** 10.00
+- **Submitted:** 2013-09-05 17:28:37
+- **Approved:** true
+- **Tags:** #rust, bstrie, dpc, tjc
+
+---
+
 ## Quote #7073
 
 ```
@@ -582,6 +1173,25 @@ toddaaro> rusti: 2^8
 - **Submitted:** 2013-09-16 11:37:22
 - **Approved:** true
 - **Tags:** rust, strcat, tjc
+
+---
+
+## Quote #7077
+
+```
+<mark_edward_> ? should be unary, and return the type of a thing
+<mark_edward_> let x: int = 5; let y:x? = 1;
+<Eridius> ? should be a postfix operator that prints the value's repr to stdout
+<tikue_> i think ? should reverse the order of arguments
+<tikue_> |x| x + 1 ? spawn
+<Eridius> if you type a ?, clippy shows up and asks if you need help writing your program
+```
+
+- **Rating:** 7 (7 votes)
+- **Score:** 8.00
+- **Submitted:** 2013-09-20 08:49:01
+- **Approved:** true
+- **Tags:** #rust
 
 ---
 
@@ -603,6 +1213,23 @@ toddaaro> rusti: 2^8
 
 ---
 
+## Quote #7087
+
+```
+<Jesse> rusti: "botsnack";
+* rusti ()
+<kimundi> rusti: version.slice_to(5).iter().map(|c| match c { 'r' => 'y', 's' => 'm', 't' | 'c' => '!', c => c}).collect::<~str>()
+* rusti ~"yum!!"
+```
+
+- **Rating:** 10 (12 votes)
+- **Score:** 6.00
+- **Submitted:** 2013-09-24 13:58:24
+- **Approved:** true
+- **Tags:** #rust
+
+---
+
 ## Quote #7095
 
 ```
@@ -613,6 +1240,43 @@ toddaaro> rusti: 2^8
 - **Score:** 3.00
 - **Submitted:** 2013-09-30 03:13:00
 - **Approved:** true
+
+---
+
+## Quote #7111
+
+```
+<eholk> this code makes me wonder if the trait system might be turing complete
+<tjc> paging Oleg
+```
+
+- **Rating:** 8 (8 votes)
+- **Score:** 9.00
+- **Submitted:** 2013-10-12 02:06:41
+- **Approved:** true
+- **Tags:** #rust, eholk, tjc
+
+---
+
+## Quote #7119
+
+```
+<eddyb> bstrie: uint isn't unsigned int, it's uintptr_t which should be as big as size_t
+<eddyb> bstrie: uint >= uintptr_t = size_t
+<eddyb> on a 16bit system, they could decide to make (u)int 32bit, but it could be 16bit as well
+<kimundi> eddyb: Our uint and int are defined as pointer sized though
+<bstrie> kimundi: I think what eddyb is saying is that size_t isn't defined as pointer-sized
+<eddyb> bstrie: nope, it is
+* bstrie throws up his hands
+* kimundi catches bstries hands and hands them back
+* bstrie reluctantly takes back his half-digested hands
+```
+
+- **Rating:** 2 (4 votes)
+- **Score:** 2.00
+- **Submitted:** 2013-10-17 13:49:49
+- **Approved:** true
+- **Tags:** #rust, bstrie, eddyb, ffi, kimundi
 
 ---
 
@@ -724,6 +1388,23 @@ toddaaro> rusti: 2^8
 
 ---
 
+## Quote #7187
+
+```
+<bstrie> are there any photoshop masters out there who volunteer to shop pcwalton's head onto the marine in http://www.threeguysonejoystick.com/wp/wp-content/uploads/2011/11/Doom1-Cover.jpg , and turn all the demons into @ symbols
+<SiegeLord> ...did John Romero put an (R) symbol on his signature?
+<bstrie> SiegeLord: hahahaha
+<bstrie> I.... I think he did.
+```
+
+- **Rating:** 5 (5 votes)
+- **Score:** 6.00
+- **Submitted:** 2014-01-09 20:49:44
+- **Approved:** true
+- **Tags:** #rust-internals, bstrie, siegelord
+
+---
+
 ## Quote #7201
 
 ```
@@ -817,6 +1498,106 @@ toddaaro> rusti: 2^8
 
 ---
 
+## Quote #7266
+
+```
+<mbrubeck> we could implement <iframe browser> so you can build a browser in HTML, Gaia-style
+<jdm> oppa gaia style
+```
+
+- **Rating:** 3 (5 votes)
+- **Score:** 2.50
+- **Submitted:** 2014-04-30 22:38:38
+- **Approved:** true
+- **Tags:** #servo, gaia, gangnamstyle
+
+---
+
+## Quote #7271
+
+```
+<Ms2ger> This one always makes me happy, no matter how often I see it
+<Ms2ger>     /// This is the main entry point for receiving and dispatching DOM events.
+<Ms2ger>     /// TODO: Actually perform DOM event dispatch.
+```
+
+- **Rating:** 9 (9 votes)
+- **Score:** 10.00
+- **Submitted:** 2014-05-13 14:34:24
+- **Approved:** true
+- **Tags:** servo
+
+---
+
+## Quote #7272
+
+```
+<jdm> woah
+<jdm> woah
+<jdm> about-mozilla just loaded and didn't crash
+<jdm> this could be big
+<jdm> crashes on shutdown, but no biggie
+```
+
+- **Rating:** 9 (9 votes)
+- **Score:** 10.00
+- **Submitted:** 2014-05-14 18:28:03
+- **Approved:** true
+- **Tags:** servo, jdm
+
+---
+
+## Quote #7278
+
+```
+<Ms2ger> "why's it slow? because, single-threaded why's it single-threaded? because, locks, mutable etc why's it mutable? because, performance!"
+```
+
+- **Rating:** 30 (30 votes)
+- **Score:** 31.00
+- **Submitted:** 2014-05-26 07:27:24
+- **Approved:** true
+- **Tags:** #rust
+
+---
+
+## Quote #7284
+
+```
+-!- jdm [jdm@moz-3D201070.cable.virginm.net] has joined #servo
+<crowbot> jdm: Ms2ger said r????
+<jdm> old news
+<jdm> when will someone want me for my mind instead of just my r+ :(
+<larsberg> jdm: it's even worse for me! I was just a standing, replacement jdm... not even as good as a real r+ from "the" jdm...
+<jdm> aww
+<jdm> there there, we can't all be me
+```
+
+- **Rating:** 3 (3 votes)
+- **Score:** 4.00
+- **Submitted:** 2014-06-11 22:28:25
+- **Approved:** true
+- **Tags:** #servo, jdm, larsberg
+
+---
+
+## Quote #7292
+
+```
+<Ms2ger> glob|away, logbot seems to be gone from #servo 
+<mihneadb> Ms2ger: it couldn't take it anymore
+<Ms2ger> Pah
+<mihneadb> burnout
+```
+
+- **Rating:** 4 (4 votes)
+- **Score:** 5.00
+- **Submitted:** 2014-07-07 10:54:43
+- **Approved:** true
+- **Tags:** burnout, logbot, mihneadb, ms2ger, servo
+
+---
+
 ## Quote #7297
 
 ```
@@ -835,6 +1616,20 @@ toddaaro> rusti: 2^8
 - **Tags:** rust
 
 **Notes:** Overloaded index operator changed in Rust.
+
+---
+
+## Quote #7300
+
+```
+<kmc> if Google can translate English to Arabic using a huge machine learning corpus, maybe we can translate HTML syntax to DOMs the same way ;)
+```
+
+- **Rating:** 4 (4 votes)
+- **Score:** 5.00
+- **Submitted:** 2014-07-15 18:31:21
+- **Approved:** true
+- **Tags:** #servo, html, language, parsing, translation
 
 ---
 
@@ -865,6 +1660,74 @@ toddaaro> rusti: 2^8
 - **Submitted:** 2014-08-13 11:17:52
 - **Approved:** true
 - **Tags:** food, hungry, jgraham, jonco, rust
+
+---
+
+## Quote #7331
+
+```
+* jdm is seeing what happens when delaying layout for as long as possible
+<jdm> ie. until a layout query is issued or we return to the event loop
+<zwarich> wait, what's the current policy?
+<jdm> HOLY CRAP THE DOM CHANGED BETTER RELAYOUT THE ENTIRE PAGE JUST IN CASE
+```
+
+- **Rating:** 19 (19 votes)
+- **Score:** 20.00
+- **Submitted:** 2014-09-16 02:34:17
+- **Approved:** true
+- **Tags:** perf, layout, #servo
+
+---
+
+## Quote #7348
+
+```
+<bstrie> eddyb: we'll be stabilizing all comments for 1.0. code can change, but comments become part of the public API
+<bstrie> typo fixes will have to be deferred to 2.0
+<nmatsakis> bstrie: you laugh but once in an aquisition attempt...
+<nmatsakis> I had written some code to do a linaer search, or binary search, or something like that
+<nmatsakis> and I wrote "// Super clever search algorithmn. Patent pending."
+<nmatsakis> and apparently this cost us many months
+<nmatsakis> where the lawyers were like
+<nmatsakis> "patent? what patent? we didn't see that in the paperwork!"
+<nmatsakis> our CEO told me later...
+```
+
+- **Rating:** 19 (19 votes)
+- **Score:** 20.00
+- **Submitted:** 2014-10-30 17:27:30
+- **Approved:** true
+- **Tags:** #rust-internals
+
+---
+
+## Quote #7351
+
+```
+<bstrie> "If this query were assigned to one of the variables used in $query, the query beast awakened." #officialPHPdocs
+<bstrie> Turning and turning in the widening gyre
+<bstrie> The program cannot hear the programmer;
+<bstrie> Things fall apart; the database cannot hold;
+<bstrie> Mere anarchy is loosed upon the system;
+<bstrie> The malicious query is injected, and everywhere
+<bstrie> The ceremony of security is drowned;
+<bstrie> The best lack all conviction, while the worst
+<bstrie> Wield bonafide Zend PHP Certification.
+<bstrie> The connection drops again; but now I know
+<bstrie> That twenty centuries of stony sleep(1)
+<bstrie> Were vexed to nightmare by string interpolation,
+<bstrie> And what rough beast, its hour come round at last,
+<bstrie> Slouches towards MySQL to be run?
+```
+
+- **Rating:** 5 (5 votes)
+- **Score:** 6.00
+- **Submitted:** 2014-11-04 16:28:08
+- **Approved:** true
+- **Tags:** #rust-offtopic, php, yeats
+
+**Notes:** http://php.net/manual/en/security.database.sql-injection.php
 
 ---
 
@@ -904,6 +1767,69 @@ toddaaro> rusti: 2^8
 
 ---
 
+## Quote #7390
+
+```
+<Ms2ger> Don't you like my spec?
+<Manishearth> why is it purple
+```
+
+- **Rating:** -5 (13 votes)
+- **Score:** 0.50
+- **Submitted:** 2015-02-03 16:43:11
+- **Approved:** true
+- **Tags:** #servo, dom, purple, standards, style
+
+**Notes:** https://html5.org/specs/dom-range.html
+
+---
+
+## Quote #7393
+
+```
+<larsberg> footgun status: fired
+<jdm> why do we even have a gun that fires feet
+<larsberg> how else would we fill all these clownshoes?
+```
+
+- **Rating:** 19 (19 votes)
+- **Score:** 20.00
+- **Submitted:** 2015-02-10 19:42:59
+- **Approved:** true
+- **Tags:** #servo, clownshoes
+
+---
+
+## Quote #7394
+
+```
+<jdm> it seems like my assumptions are always invalidated by looking at the code
+<jdm> I should just not look at the code in the future
+```
+
+- **Rating:** 12 (12 votes)
+- **Score:** 13.00
+- **Submitted:** 2015-02-10 21:48:31
+- **Approved:** true
+- **Tags:** #servo
+
+---
+
+## Quote #7397
+
+```
+<pcwalton> never did I think I would be rick rolling myself over and over as part of this job
+<larsberg> plus, if the first version of youtube media support internally redirected to Rick Astley, it would probably take a while before people learned that was all servo supported...
+```
+
+- **Rating:** 5 (5 votes)
+- **Score:** 6.00
+- **Submitted:** 2015-02-18 01:35:20
+- **Approved:** true
+- **Tags:** larsberg, pcwalton, rick, rolling, servo
+
+---
+
 ## Quote #7405
 
 ```
@@ -916,6 +1842,25 @@ toddaaro> rusti: 2^8
 - **Submitted:** 2015-03-03 02:14:57
 - **Approved:** true
 - **Tags:** #rust, eddyb, kittens
+
+---
+
+## Quote #7408
+
+```
+<steveklabnik> ETE?
+<wycats> Emerging Technologies for the... Enterprise
+<steveklabnik> ahh
+<steveklabnik> neat
+<wycats> either it's a Java conference or it takes place in the Star Trek universe
+<wycats> I have gone a few times and I'm unsure which
+```
+
+- **Rating:** 12 (12 votes)
+- **Score:** 13.00
+- **Submitted:** 2015-03-13 15:29:43
+- **Approved:** true
+- **Tags:** #rust, enterprise, startrek
 
 ---
 
@@ -935,6 +1880,78 @@ toddaaro> rusti: 2^8
 
 ---
 
+## Quote #7416
+
+```
+<Manishearth> looks like jgraham from the automation team broke our automation
+<Manishearth> sabotage I tell you
+...
+<jgraham> Manishearth: It's "automationb and tools"
+<jgraham> In this case I was playing the role of "tool"
+```
+
+- **Rating:** 9 (9 votes)
+- **Score:** 10.00
+- **Submitted:** 2015-04-05 05:04:44
+- **Approved:** true
+- **Tags:** #servo, jgraham, manishearth
+
+**Notes:** jgraham's pull request broke our bots
+
+---
+
+## Quote #7440
+
+```
+<Gankro> There's something deeply visceral about seeing *PR posted* *PR closed* *branch deleted* within a few hour span and no comments.
+<Gankro> The only way I think it could be better is if it was followed by *account deleted*
+<Quxxy> Gankro: Followed a few days later by a notice in the local newspaper of a man found hanging from his ceiling fan and "git reset --hard" scrawled on his chest in blood
+```
+
+- **Rating:** 5 (5 votes)
+- **Score:** 6.00
+- **Submitted:** 2015-06-30 05:40:57
+- **Approved:** true
+- **Tags:** #rust-offtopic, gankro, quxxy
+
+---
+
+## Quote #7447
+
+```
+<pcwalton> got select() working on ipc-channel on Mac :)
+<pcwalton> Mach port sets \o/
+pcwalton quit (pcwalton@moz-nh2.o1i.216.216.IP) Client exited
+<jdm> every time pcwalton disappears after making some comment about mac IPC code I imagine he's triggered a new kernel oops
+```
+
+- **Rating:** 7 (7 votes)
+- **Score:** 8.00
+- **Submitted:** 2015-07-15 18:39:30
+- **Approved:** true
+- **Tags:** #servo, e10s, macosx, oops
+
+---
+
+## Quote #7453
+
+```
+<proc> and having a vm parsing it
+<cmr> and there's a compielr.
+<eddyb> what does a compielr compiel?
+<WindowsBunny> eddyb: coed
+```
+
+- **Rating:** 6 (6 votes)
+- **Score:** 7.00
+- **Submitted:** 2015-08-18 21:53:35
+- **Approved:** true
+- **Tags:** erlang, perl, rust-offtopic
+
+**Notes:** similarities between perl and Erlang
+
+---
+
 ## Quote #7483
 
 ```
@@ -950,6 +1967,68 @@ toddaaro> rusti: 2^8
 - **Submitted:** 2015-10-09 00:04:50
 - **Approved:** true
 - **Tags:** jinx, coincidence, #rust
+
+---
+
+## Quote #7493
+
+```
+<proc> when you doubt your code so much that you don't trust the IDE output anymore, delete the whole build and rebuild it manually..
+<rphmeier> proc: "cargo clean && cargo build" is just as effective :P
+```
+
+- **Rating:** 2 (2 votes)
+- **Score:** 3.00
+- **Submitted:** 2015-10-29 03:48:23
+- **Approved:** true
+- **Tags:** #rust
+
+**Notes:** when the build log seems too short and error lacking
+
+---
+
+## Quote #7494
+
+```
+<pcwalton> is there a faster way to linearly interpolate varyings on a quad than to triangulate the quad and use barycentric coordinates on the triangle the point is in?
+<pcwalton> (apologies for the basic question)
+```
+
+- **Rating:** 17 (17 votes)
+- **Score:** 18.00
+- **Submitted:** 2015-11-04 22:59:58
+- **Approved:** true
+- **Tags:** #servo, gfx, opengl, technobabble
+
+---
+
+## Quote #7506
+
+```
+* WindowsBunny installs bunny toolbar
+<WindowsBunny> which actually isn't a toolbar
+<WindowsBunny> it just causes bunnies to hop around websites inside your browser
+<proc> ff bunny theme, animated
+<WindowsBunny> that would be an _awesome_ extension
+<WindowsBunny> they'd climb on various page elements
+<WindowsBunny> nibbling the corners off of images
+<proc> WindowsBunny: as long as they don't click on them
+<WindowsBunny> proc: You can also pet the bunnies with the mouse cursor
+<proc> WindowsBunny: cookie-clicker is out of the league with that 
+<WindowsBunny> I'll probably have to have a button on one of the toolbars though where you can go to get more bunnies or get food to feed them
+<proc> WindowsBunny: think of them climbing between the layers of youtube-videos
+<proc> WindowsBunny: but only for money :P
+<proc> and if you don't feed em every day, you loose some
+<WindowsBunny> proc: I'll be rich from microtransactions
+<proc> WindowsBunny: implemented as an microservice
+<WindowsBunny> damnit, now I really want to make this extension
+```
+
+- **Rating:** 2 (2 votes)
+- **Score:** 3.00
+- **Submitted:** 2015-12-05 02:28:41
+- **Approved:** true
+- **Tags:** #rust-offtopic, #windowsbunny
 
 ---
 
@@ -990,6 +2069,22 @@ toddaaro> rusti: 2^8
 
 ---
 
+## Quote #7534
+
+```
+<kamalmarhubi> where can I get started with profiling compilation
+<Mutabah> kamalmarhubi: -C time-passes iirc
+<Kingsqueeee> Mutabah: that's a pretty zen sounding flag
+```
+
+- **Rating:** 4 (4 votes)
+- **Score:** 5.00
+- **Submitted:** 2016-04-30 05:02:59
+- **Approved:** true
+- **Tags:** #rust
+
+---
+
 ## Quote #7538
 
 ```
@@ -1020,6 +2115,54 @@ toddaaro> rusti: 2^8
 - **Submitted:** 2016-05-19 16:54:29
 - **Approved:** true
 - **Tags:** #servo, bors, homu, movies, rust, starwars
+
+---
+
+## Quote #7543
+
+```
+<pcwalton> ignore the fact that the FPS is low in both cases; that’s because my test app draws a ton of doges on the CPU
+```
+
+- **Rating:** 8 (8 votes)
+- **Score:** 9.00
+- **Submitted:** 2016-05-26 21:16:38
+- **Approved:** true
+- **Tags:** #servo, doge, performance
+
+---
+
+## Quote #7546
+
+```
+<ajeffrey> jgraham: (why are we whispering?)
+<jdm> spec editors lurk under every bridge
+<jdm> they have very sharp hearing
+<ajeffrey> jdm: okay, at least you are validating my confusion :)
+<ajeffrey> jdm: do spec editors eat goats?
+<jdm> yes, to reduce our supply of sacrificial ones
+<jdm> which limits our ability to divine the spec's true intentions
+```
+
+- **Rating:** 5 (5 votes)
+- **Score:** 6.00
+- **Submitted:** 2016-06-08 15:07:55
+- **Approved:** true
+- **Tags:** #servo, ajeffrey, jdm, specs
+
+---
+
+## Quote #7548
+
+```
+<pcwalton> I don’t want to make a decision like this with measurements.
+```
+
+- **Rating:** 5 (5 votes)
+- **Score:** 6.00
+- **Submitted:** 2016-06-21 12:45:06
+- **Approved:** true
+- **Tags:** data, measurements, servo
 
 ---
 
@@ -1069,6 +2212,46 @@ toddaaro> rusti: 2^8
 
 ---
 
+## Quote #7571
+
+```
+<Ixrec> and from misuses of event systems
+<Ixrec> our internal framework had events before it had promises so that happened quite a bit
+<Ixrec> so much fun writing tests that call foo() and then wait for an event to get fired
+<Ixrec> then I realize I have to start waiting for the event *before* I call foo()
+<Ixrec> or else it never fires and the test times out
+<fmtq> Ixrec: hahaha you tried to unit test it
+<Ixrec> we *do* unit test it!
+```
+
+- **Rating:** 1 (1 votes)
+- **Score:** 2.00
+- **Submitted:** 2016-09-24 12:36:09
+- **Approved:** true
+- **Tags:** events, js, promises, rust-offtopic
+
+**Notes:** Talking about JS and rewriting event based code to promises
+
+---
+
+## Quote #7572
+
+```
+<spudowiar> * the pin drop echoes *
+<sp3d> shhh
+<jonas> What happened next?
+<spudowiar> jonas: I stepped on the pin
+<durka42> error: attempted use of pin after drop
+```
+
+- **Rating:** 9 (9 votes)
+- **Score:** 10.00
+- **Submitted:** 2016-10-06 18:21:44
+- **Approved:** true
+- **Tags:** #rust, error
+
+---
+
 ## Quote #7577
 
 ```
@@ -1090,6 +2273,60 @@ toddaaro> rusti: 2^8
 
 ---
 
+## Quote #7581
+
+```
+<SimonSapin> I’m tempted to return my new micro-wave oven to the store
+<SimonSapin> because of bad kerning
+<SimonSapin> it has a four-digit display like xx:yy, fairly standard
+<SimonSapin> but there’s too much space on either side of the ":"
+<SimonSapin> and every time I see it I hate it
+```
+
+- **Rating:** 9 (9 votes)
+- **Score:** 10.00
+- **Submitted:** 2017-01-14 10:02:43
+- **Approved:** true
+- **Tags:** #servo-offtopic
+
+**Notes:** First world problems.
+
+---
+
+## Quote #7587
+
+```
+<mqudsi> Is there anything prettier than Result<Option<T>,E>?
+<mqudsi> In particular, the syntax for return Ok(Some(value)) makes me want to cry :(
+<mbrubeck> I think that I shall never see
+<mbrubeck> a poem as pretty as Result<Option<T>,E>
+```
+
+- **Rating:** 9 (9 votes)
+- **Score:** 10.00
+- **Submitted:** 2017-04-06 23:18:15
+- **Approved:** true
+- **Tags:** #rust, poetry
+
+---
+
+## Quote #7590
+
+```
+<nox> bz: But also because when I started reading the spec,
+<nox> I'm pretty sure there was a note about them not being able to be nested,
+<nox> and a few days later, the note was gone, of course.
+<bz> nox: note:not(:not(:not(:not(:matches(spec)))))
+```
+
+- **Rating:** 5 (7 votes)
+- **Score:** 3.50
+- **Submitted:** 2017-04-25 17:18:14
+- **Approved:** true
+- **Tags:** #servo, css, not, selectors, specs
+
+---
+
 ## Quote #7592
 
 ```
@@ -1103,6 +2340,20 @@ toddaaro> rusti: 2^8
 - **Submitted:** 2017-08-04 04:22:59
 - **Approved:** true
 - **Tags:** agashlin, john-galt, rust
+
+---
+
+## Quote #7593
+
+```
+<@SimonSapin> bholley: Good news, stylo stylesheet parsing microbench just went from ~39ms to ~29ms with my WIP patch. Bad news, I don’t know why.
+```
+
+- **Rating:** 9 (9 votes)
+- **Score:** 10.00
+- **Submitted:** 2017-08-21 13:23:48
+- **Approved:** true
+- **Tags:** #quantum, #servo
 
 ---
 
@@ -1195,6 +2446,36 @@ toddaaro> rusti: 2^8
 
 ---
 
+## Quote #7607
+
+```
+<durka42> I really enjoy acrichto's rapidly changing certainty levels in PR descriptions
+<durka42> > we for sure probably don't want to upstream this and otherwise it seems not too bad for now at least
+```
+
+- **Rating:** 7 (7 votes)
+- **Score:** 8.00
+- **Submitted:** 2018-02-06 20:05:13
+- **Approved:** true
+- **Tags:** #rust
+
+---
+
+## Quote #7610
+
+```
+<mbrubeck> Pre-RFC: Rename "attributes" to "hashtags"
+<durka42> best argument for changing to @-syntax I've heard yet
+```
+
+- **Rating:** 1 (1 votes)
+- **Score:** 2.00
+- **Submitted:** 2018-03-15 17:58:58
+- **Approved:** true
+- **Tags:** #rust, syntax
+
+---
+
 ## Quote #7612
 
 ```
@@ -1211,6 +2492,71 @@ toddaaro> rusti: 2^8
 - **Submitted:** 2018-05-27 12:00:45
 - **Approved:** true
 - **Tags:** rust
+
+---
+
+## Quote #7613
+
+```
+<bstrie> excel asked me if I wanted to restart in order to apply updates. I said no. in response, excel turned all text in its UI transparent. got me to restart and update. the system works!
+```
+
+- **Rating:** 5 (7 votes)
+- **Score:** 3.50
+- **Submitted:** 2018-07-30 22:58:09
+- **Approved:** true
+- **Tags:** #bstrie, #rust-offtopic
+
+---
+
+## Quote #7614
+
+```
+<panicbit> This is a nice actual tree view https://i.imgur.com/R8iZYDL.jpg
+<panicbit> one of the many openly available
+<fmtq> you fuck
+<fmtq> I clicked this
+<panicbit> mission accomplished
+```
+
+- **Rating:** 5 (5 votes)
+- **Score:** 6.00
+- **Submitted:** 2018-08-01 17:29:30
+- **Approved:** true
+- **Tags:** #rust-offtopic
+
+---
+
+## Quote #7618
+
+```
+<eijebong> nox: Bugs in script/ are so rewarding, I feel like every time you change something in there, it fixes 40 bugs but take 40 minutes to compile :p
+<lqd> therefore, we should make it compile slower
+<eijebong> lqd: no
+<lqd> too late im doing it
+```
+
+- **Rating:** 8 (8 votes)
+- **Score:** 9.00
+- **Submitted:** 2018-09-17 22:51:19
+- **Approved:** true
+- **Tags:** servo
+
+---
+
+## Quote #7620
+
+```
+<Manishearth> aah the bug i am bisecting is not one bug but TWO bugs
+<mbrubeck> git trisect
+<mbrubeck> Hope that it's not a bug in ANGLE
+```
+
+- **Rating:** 6 (6 votes)
+- **Score:** 7.00
+- **Submitted:** 2018-11-07 22:52:55
+- **Approved:** true
+- **Tags:** #servo, bisect, geometry, math
 
 ---
 

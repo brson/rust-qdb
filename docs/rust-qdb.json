@@ -1,5 +1,20 @@
 [
   {
+    "id": 5718,
+    "body": "<graydon> ow. my friend just broke my funny bone.\n<graydon> \"Have you heard the funny anagram for Banach-Tarski?\"\n<tjc> nope\n<graydon> \"Banach-Tarski Banach-Tarski\"\n<tjc> nyuk nyuk\n<graydon> a joke that cannot possibly end well",
+    "notes": null,
+    "rating": 12,
+    "votes": 12,
+    "submitted": "2011-04-12 17:21:23",
+    "approved": true,
+    "flagged": false,
+    "score": 13.0,
+    "tags": [
+      "#rust",
+      "math"
+    ]
+  },
+  {
     "id": 5813,
     "body": "<lkuper> So, which rust-ers are in Toronto this week?\n<eholk> hey, with all the normal rusters out of town, it's our chance to replace the syntax with S-Expressions!",
     "notes": null,
@@ -24,6 +39,35 @@
     "tags": []
   },
   {
+    "id": 6156,
+    "body": "<nmatsakis> are rustbots broken in some way?  webpage looks...odd\n<marijn> win1 is wedged, mac1 is missing, and i had to restart earlier to get any response at all. in other words, nothing out of the usual",
+    "notes": null,
+    "rating": 3,
+    "votes": 5,
+    "submitted": "2012-01-03 19:50:48",
+    "approved": true,
+    "flagged": false,
+    "score": 2.5,
+    "tags": [
+      "#rust",
+      "rustbot"
+    ]
+  },
+  {
+    "id": 6221,
+    "body": "<graydon> you know I left the math program in part because I was perpetually annoyed at math's unwillingness to be syntactically unambiguous, right?\n<tjc> you know you're a nerd when math isn't precise enough for you",
+    "notes": null,
+    "rating": 20,
+    "votes": 20,
+    "submitted": "2012-01-26 21:23:00",
+    "approved": true,
+    "flagged": false,
+    "score": 21.0,
+    "tags": [
+      "#rust"
+    ]
+  },
+  {
     "id": 6293,
     "body": "<erickt> is it just me, or did compiling rust just become a lot slower?\n<brson> compiling rustc became a lot slower because it grew my almost 9kloc this week\n<erickt> Sad. It now seems to take a minute+ to link a stage on my laptop\n<pcwalton> hopefully CCI will help\n<erickt> what's that?\n<pcwalton> cross-crate inlining\n<pcwalton> the reason that rust grew 9kloc",
     "notes": null,
@@ -34,6 +78,40 @@
     "flagged": false,
     "score": 9.0,
     "tags": []
+  },
+  {
+    "id": 6409,
+    "body": "<graydon> dherman: list::mk, list::hd, list::tl :)\n<dherman> sr, mks sns\n<graydon> ok: make, head and tail if you like Mr. Vowelpants\n<graydon> this is a solved problem for lists\n<dherman> I kid!\n* lkuper is totally going to start calling dherman \"Mr. Vowelpants\"\n<dherman> it wouldn't be my first -pants title\n<lkuper> oh, pardon: \"Dr. Vowelpants\"",
+    "notes": null,
+    "rating": 10,
+    "votes": 10,
+    "submitted": "2012-04-28 07:17:07",
+    "approved": true,
+    "flagged": false,
+    "score": 11.0,
+    "tags": [
+      "#rust",
+      "dherman",
+      "graydon",
+      "lkuper"
+    ]
+  },
+  {
+    "id": 6494,
+    "body": "* lkuper wonders what graydon's law in fact is\n<graydon> \"nothing every works right\"\n<graydon> *ever\n<Wensley|bstrie> haha\n<Wensley|bstrie> a self-affirming law\n<graydon> quite",
+    "notes": null,
+    "rating": 15,
+    "votes": 15,
+    "submitted": "2012-07-10 18:25:34",
+    "approved": true,
+    "flagged": false,
+    "score": 16.0,
+    "tags": [
+      "#rust",
+      "bstrie",
+      "graydon",
+      "lkuper"
+    ]
   },
   {
     "id": 6510,
@@ -57,6 +135,48 @@
     "approved": true,
     "flagged": false,
     "score": 9.0,
+    "tags": [
+      "#rust"
+    ]
+  },
+  {
+    "id": 6523,
+    "body": "<pfox__> how do you type 'bikeshed' in dvorak? ;)",
+    "notes": null,
+    "rating": -1,
+    "votes": 3,
+    "submitted": "2012-08-06 23:07:42",
+    "approved": true,
+    "flagged": false,
+    "score": 0.6666666666666666,
+    "tags": [
+      "#rust"
+    ]
+  },
+  {
+    "id": 6563,
+    "body": "<brson> oh, if only i had valground 2 hours ago\n<tjc> is \"valground\" the official past tense of \"valgrind\"?\n<brson> yes, officially",
+    "notes": null,
+    "rating": 5,
+    "votes": 5,
+    "submitted": "2012-09-14 06:06:35",
+    "approved": true,
+    "flagged": false,
+    "score": 6.0,
+    "tags": [
+      "#servo"
+    ]
+  },
+  {
+    "id": 6573,
+    "body": "<bstrie> brson: do `do` statements have return values?\n<nejucomo> bstrie: do is syntactic sugar for an expression, and every expression evaluates to a value.\n<nejucomo> So yes, although calling them \"return values\" may be misleading, because there's a function called \"return\".\n...\n<nejucomo> Doh!  I thought this was the haskell channel!  Please completely disregard what I said.",
+    "notes": null,
+    "rating": 12,
+    "votes": 12,
+    "submitted": "2012-09-19 18:53:23",
+    "approved": true,
+    "flagged": false,
+    "score": 13.0,
     "tags": [
       "#rust"
     ]
@@ -119,6 +239,20 @@
     ]
   },
   {
+    "id": 6625,
+    "body": "<burg> I love naming upstream as 'ups'\n<burg> git pushups!",
+    "notes": null,
+    "rating": 1,
+    "votes": 3,
+    "submitted": "2012-10-23 21:42:42",
+    "approved": true,
+    "flagged": false,
+    "score": 1.4999999999999998,
+    "tags": [
+      "#servo"
+    ]
+  },
+  {
     "id": 6636,
     "body": "<kspaans> I'm trying to understand the rust build system\n<bstrie> kspaans: you mean the makefile? I wouldn't advise it\n<bstrie> kspaans: I suppose you haven't heard the tale of Jacobin, the lost Sixth rust developer who was never heard from again after attempting to understand the makefile",
     "notes": null,
@@ -135,6 +269,36 @@
     ]
   },
   {
+    "id": 6650,
+    "body": "<pcwalton> basically you have something like ~ClosedFile, and your open() function takes a ~ClosedFile by move and returns an ~OpenFile\n<pcwalton> this pattern is called \"session types\"\n<burg> pcwalton: I usually associate the term session types with the pi calculus\n<lkuper> I associate \"session types\" with phil wadler taking off his shirt",
+    "notes": null,
+    "rating": 6,
+    "votes": 6,
+    "submitted": "2012-11-07 19:19:37",
+    "approved": true,
+    "flagged": false,
+    "score": 7.0,
+    "tags": [
+      "#rust"
+    ]
+  },
+  {
+    "id": 6652,
+    "body": "<pcwalton> I copy and pasted the integer literal inference code to make floating point literal code and then did a search and replace int -> float\n<pcwalton> and \"intersection\" changed to \"floatersection\"\n<pcwalton>         // Otherwise, take the floatersection of the two sets of possible types.\n<pcwalton>         let floatersection = floatersection(a_pt, b_pt);\n<pcwalton>         if *floatersection == INT_TY_SET_EMPTY {\n<pcwalton>             return Err(ty::terr_no_floategral_type);\n<pcwalton>         }",
+    "notes": null,
+    "rating": 19,
+    "votes": 19,
+    "submitted": "2012-11-08 19:44:48",
+    "approved": true,
+    "flagged": false,
+    "score": 20.0,
+    "tags": [
+      "#rust",
+      "floatersection",
+      "paste"
+    ]
+  },
+  {
     "id": 6679,
     "body": "<bstrie> #[kick_ass] macro_rules! component_each(...\n<Dzmitry> bstrie: you read my mind\n<bjz> bstrie: you need a hyphen in that 'kick_ass' - won't compile\n<bjz> #[kick-ass]\n<bjz> as per Dzmitry's specifications\n<bstrie> aha\n<bstrie> think we might need to modify the lexer though\n<bstrie> or just really hope that nobody overloads subtraction on verbs and body parts\n<bjz> hee\n<bjz> what is a kick without an ass?\n<bstrie> bjz: well you could conceivably kick many things. for example if you wished to teach rust\n         programming to children, you could use #[kick-fanny] instead\n<bjz> now, now\n<bjz> I'll make you scrub the logs\n bstrie hopes that \"fanny\" is not secretly a vulgar word in british english\n<bjz> HAH\n<bjz> poor bstrie\n [momentary pause]\n<bstrie> oh god",
     "notes": "http://en.wikipedia.org/wiki/Fanny#In_slang",
@@ -148,6 +312,20 @@
       "#rust",
       "english",
       "fanny"
+    ]
+  },
+  {
+    "id": 6683,
+    "body": "<graydon> I guess I added that code!\n<graydon> yay revision control telling you to blame yourself\n<tjc> I blame myself anyway\n<tjc> that's one thing I don't need software for ;-)",
+    "notes": null,
+    "rating": 7,
+    "votes": 7,
+    "submitted": "2012-11-27 22:55:33",
+    "approved": true,
+    "flagged": false,
+    "score": 8.0,
+    "tags": [
+      "#rust"
     ]
   },
   {
@@ -193,6 +371,23 @@
     "score": 4.0,
     "tags": [
       "rust"
+    ]
+  },
+  {
+    "id": 6815,
+    "body": "<bstrie> also apparently github is having a meetup tomorrow in pittsburgh\n<bstrie> I think this means that RUSTCON FEBRUARY '012 must happen coterminously\n<lkuper> bstrie: '012?\n<bstrie> lkuper: yes, pronounced \"oh-twelve\"\n<bstrie> we've learned from the mistakes of y2k\n<lkuper> bstrie: ...okay, carry on\n<benh> I can't wait for rustcon '013 next year",
+    "notes": "Conversation took place in February 2013.",
+    "rating": 7,
+    "votes": 7,
+    "submitted": "2013-02-27 20:45:37",
+    "approved": true,
+    "flagged": false,
+    "score": 8.0,
+    "tags": [
+      "#rust",
+      "benh",
+      "bstrie",
+      "lkuper"
     ]
   },
   {
@@ -265,6 +460,85 @@
     ]
   },
   {
+    "id": 6840,
+    "body": "<brson> ugh. I'm not going to try to fix the bsd bots. I don't understand how this works\n<pcwalton> :( we need graydon\n<strcat> graydon.clone()\n<benh> strcat: I tried saying let graydon2 = graydon; let graydon3 = graydon; etc a bunch but it turns out that only moved him. He wasn't actually more productive afterwards, just really mad.",
+    "notes": "who could have expected that graydon would be so unique",
+    "rating": 15,
+    "votes": 15,
+    "submitted": "2013-03-14 19:33:43",
+    "approved": true,
+    "flagged": false,
+    "score": 16.0,
+    "tags": [
+      "#rust",
+      "benh",
+      "brson",
+      "graydon",
+      "pcwalton",
+      "strcat"
+    ]
+  },
+  {
+    "id": 6841,
+    "body": "<jamil> anyway, what is the meaning of this error: illegal borrow: creating immutable alias to mutable field\n<jamil> why is it illegal ?\n<bstrie> jamil: are you on 0.5?\n<jamil> bstrie: yep\n<bstrie> jamil: the meaning of that error is boundless despair. it urges you to upgrade to the latest git master",
+    "notes": "The never ending joy of having to many language changes since last release.",
+    "rating": 5,
+    "votes": 5,
+    "submitted": "2013-03-14 20:53:17",
+    "approved": true,
+    "flagged": false,
+    "score": 6.0,
+    "tags": [
+      "#rust"
+    ]
+  },
+  {
+    "id": 6847,
+    "body": "<graydon> I think it'll be a little sad if declaring a constant requires you to write a word you are morally repulsed by",
+    "notes": null,
+    "rating": 4,
+    "votes": 4,
+    "submitted": "2013-03-18 23:01:30",
+    "approved": true,
+    "flagged": false,
+    "score": 5.0,
+    "tags": [
+      "#rust"
+    ]
+  },
+  {
+    "id": 6848,
+    "body": "<benh> I used to assume that stack unwinding is magic\n<benh> following along the discussion about return-based unwinding, I now know that it's not actually magic, but it's handled by dwarves, which seems close enough.",
+    "notes": null,
+    "rating": 19,
+    "votes": 19,
+    "submitted": "2013-03-19 21:09:13",
+    "approved": true,
+    "flagged": false,
+    "score": 20.0,
+    "tags": [
+      "#rust",
+      "magic"
+    ]
+  },
+  {
+    "id": 6853,
+    "body": "<bstrie> oh god damn it\n<bstrie> I had to examine the responses of the failed http requests to determine that blogger suddenly won't allow me to load any page because I'm socks'ing through my linode right now\n<bstrie> it's supposed to show a captcha, but it can't because of the aforementioned stupid goddamn loading screen\n<bstrie> my rage is infinite\n<bstrie> I get to watch the error count in firebug increment in real-time as this page reloads the useless, undisplayed captcha screen every 0.5 seconds\n<kimundi> Use that infinite power for good!\n<lkuper> bstrie: have a baby ferret. http://cuteoverload.com/2011/08/23/baby-ferret-dreams-of-changing-the-world/\n<bstrie> lkuper: I will raise it to be an attack ferret and unleash it upon the architects of this website\n<bstrie> I will instill the essence of vengeance in its heart\n<bstrie> kimundi: indeed, if only you could build a dyson sphere around me right now to harness all this fury that I am emanating",
+    "notes": null,
+    "rating": 1,
+    "votes": 1,
+    "submitted": "2013-03-22 14:43:20",
+    "approved": true,
+    "flagged": false,
+    "score": 2.0,
+    "tags": [
+      "#rust",
+      "bstrie",
+      "kimundi",
+      "lkuper"
+    ]
+  },
+  {
     "id": 6863,
     "body": "<ghrust> rust/auto f43e6af Matthijs Hofstra: Removed libcore/mutable.rs, Mut<T> is now dead.\n<bstrie> Mut<T> is dead, long live @mut\n<thiez> :D\n<thiez> it would have been dead 4 days ago if not for a lan-party...\n<kimundi> xD\n<kimundi> priorities, I see\n<bstrie> rust would have been at 1.0 in 2009 if not for lan parties\n<bstrie> what do you think they actually do at mozilla all day?\n<tjc> bstrie: this pretty much represents every day at Mozilla: https://twitter.com/eassumption/status/185082256535203841/photo/1",
     "notes": null,
@@ -278,6 +552,20 @@
       "#rust",
       "bieber",
       "tjc"
+    ]
+  },
+  {
+    "id": 6869,
+    "body": "<benh> this is incidentally when i curse stackoverflow for ruining google searches for info on stack overflows",
+    "notes": null,
+    "rating": 24,
+    "votes": 24,
+    "submitted": "2013-04-04 17:33:43",
+    "approved": true,
+    "flagged": false,
+    "score": 25.0,
+    "tags": [
+      "#rust"
     ]
   },
   {
@@ -312,6 +600,63 @@
     ]
   },
   {
+    "id": 6895,
+    "body": "* nmatsakis wonders why he is bothering to think about this. It seems like the def'n of \"ship has sailed\" in some sense.\n<jclements> this dead cat is a ship that has sailed. We're sailing in a dead cat.\n<graydon> jclements: but crucially: _has it left the barn yet_?\n<graydon> if you've sailed the dead cat (or dead horse) out of the barn, I think maybe it's time to put it to .. bed?\n<graydon> mixed metaphors ahoy\n<jclements> I, for one, have no plans to share *my* bed with a sailing skinned cat/horse. I'm sure my wife would agree.",
+    "notes": null,
+    "rating": 3,
+    "votes": 7,
+    "submitted": "2013-04-25 20:45:46",
+    "approved": true,
+    "flagged": false,
+    "score": 2.0,
+    "tags": [
+      "#rust"
+    ]
+  },
+  {
+    "id": 6899,
+    "body": "<dbaupp> 50 comments on 4819. yay, bikeshedding! :P\n<just_bstrie> dbaupp: I don't think that any discussion involving the word \"quaternion\" can be classified  as bikeshedding\n<jensnockert> just_bstrie: I think all discussions that involve the word \"Quaternion\" can be classified as bikeshedding.",
+    "notes": null,
+    "rating": 5,
+    "votes": 5,
+    "submitted": "2013-04-29 13:43:39",
+    "approved": true,
+    "flagged": false,
+    "score": 6.0,
+    "tags": [
+      "#rust",
+      "quaternion"
+    ]
+  },
+  {
+    "id": 6900,
+    "body": "<dymk> so I guess that fail!() won't also come with a stack trace any time soon then, eh?\n<erickt1> dymk: no, but you can use gdb and break on upcall_fail\n<erickt1> then do bt to get a stack trace\n<dymk> ah, gdb\n<dymk> my liver can take the continued abuse, alright\n<dymk> ;)",
+    "notes": null,
+    "rating": 3,
+    "votes": 3,
+    "submitted": "2013-04-30 05:39:21",
+    "approved": true,
+    "flagged": false,
+    "score": 4.0,
+    "tags": [
+      "#rust"
+    ]
+  },
+  {
+    "id": 6922,
+    "body": "<doomlord> lifetime refers to borrowed pointers ?\n<bstrie> doomlord: a lifetime is essentially the potential scope of any given borrow\n<jack> that almost sounds like sage wisdom",
+    "notes": null,
+    "rating": 23,
+    "votes": 23,
+    "submitted": "2013-05-13 16:33:58",
+    "approved": true,
+    "flagged": false,
+    "score": 24.0,
+    "tags": [
+      "#rust"
+    ]
+  },
+  {
     "id": 6933,
     "body": "<gareth0> rust follows the yoda school of error handling: do, or do not, there is no try",
     "notes": null,
@@ -324,6 +669,21 @@
     "tags": [
       "#rust",
       "exceptions"
+    ]
+  },
+  {
+    "id": 6937,
+    "body": "<jdm> hooray, I fixed the leak!\n<jdm> no we only leak a rate of 10mb/s\n<jdm> *now\n<jdm> what would be mortifying in any other project is cause for success",
+    "notes": null,
+    "rating": 8,
+    "votes": 8,
+    "submitted": "2013-05-22 16:55:41",
+    "approved": true,
+    "flagged": false,
+    "score": 9.0,
+    "tags": [
+      "#servo",
+      "jdm"
     ]
   },
   {
@@ -369,6 +729,48 @@
     ]
   },
   {
+    "id": 6971,
+    "body": "<bstrie> is \"complete\" alias analysis undecidable?\n<bblum> yep\n<bstrie> ok :)\n<tjc> Rice's Theorem applies\n<tjc> every interesting static analysis is undecidable :-)\n<bstrie> haha\n<tjc> that's more or less what it really says\n<tjc> also known as the full employment theorem for compiler writers",
+    "notes": null,
+    "rating": 13,
+    "votes": 13,
+    "submitted": "2013-06-11 21:49:52",
+    "approved": true,
+    "flagged": false,
+    "score": 14.0,
+    "tags": [
+      "#rust"
+    ]
+  },
+  {
+    "id": 6993,
+    "body": "<dbaupp> Does anyone know why vec::push_slow is #[inline(never)]?\n<bstrie> dbaupp: because then it wouldn't be slow",
+    "notes": null,
+    "rating": 27,
+    "votes": 27,
+    "submitted": "2013-06-27 13:04:10",
+    "approved": true,
+    "flagged": false,
+    "score": 28.0,
+    "tags": [
+      "#rust"
+    ]
+  },
+  {
+    "id": 7004,
+    "body": "<pcwalton> macros are way better at generating code than trans is",
+    "notes": null,
+    "rating": 8,
+    "votes": 8,
+    "submitted": "2013-07-02 22:54:07",
+    "approved": true,
+    "flagged": false,
+    "score": 9.0,
+    "tags": [
+      "#rust"
+    ]
+  },
+  {
     "id": 7016,
     "body": "* tjc once blew people's minds by using quicksort in real life when sorting log sheets as part of volunteering at a radio station\n<cmr> http://rosettacode.org/wiki/Sorting_algorithms/Sleep_sort#Rust\n<cmr> Oi, look at that!\n<tjc> they were amazed that I could sort a pile of papers in 15 minutes instead of 2 hours\n<ecr> tjc: that's brilliant\n<kmc> most real-world sorting you can do radix sort\n<kmc> make piles based on first digit/letter etc.\n<sigma> libraries use a really efficient sorting system\n<tjc> ecr: the guy who was supervising me called someone else over and said… \"He said he… used a… sorting algorithm\"\n<kmc> I'm told this is how elementary school teachers usually sort things\n<kmc> so they know more about sorting algorithms than 50% of college CS grads ;)",
     "notes": null,
@@ -401,6 +803,20 @@
     ]
   },
   {
+    "id": 7027,
+    "body": "<sigma> yeh, they don't mention the word \"alpha\" anywhere in that article\n<cmr> pre-alpha!\n<Ms2ger> What's pre-alpha? Omega?\n<dbaupp> Ms2ger: ΰ\n<dbaupp> \"GREEK SMALL LETTER UPSILON WITH DIALYTIKA AND TONOS\" apparently",
+    "notes": null,
+    "rating": 5,
+    "votes": 11,
+    "submitted": "2013-07-24 14:16:17",
+    "approved": true,
+    "flagged": false,
+    "score": 2.25,
+    "tags": [
+      "#rust"
+    ]
+  },
+  {
     "id": 7036,
     "body": "<graydon> I just feel sorry for our pointer types\n<graydon> someone tries to kill one of them every day\n<graydon> :(",
     "notes": "During a discussion about unsafe pointers.",
@@ -414,6 +830,36 @@
       "graydon",
       "pointer",
       "rust"
+    ]
+  },
+  {
+    "id": 7043,
+    "body": "* cmr bed\n* strcat table\n<strcat> wait what?",
+    "notes": null,
+    "rating": 6,
+    "votes": 6,
+    "submitted": "2013-08-03 09:03:59",
+    "approved": true,
+    "flagged": false,
+    "score": 7.0,
+    "tags": [
+      "#rust",
+      "cmr",
+      "strcat"
+    ]
+  },
+  {
+    "id": 7044,
+    "body": "<aatch> Also, this is groundwork for improving the inline asm.\n<Luqman> aatch: speaking of which, found a rather amusing use for asm! today\n<aatch> Luqman, oh?\n<Luqman> aatch: using it to insert nop's so we could hexedit the binary without messing up any offsets :P\n<aatch> Luqman, oh wow.\n<aatch> That is mad",
+    "notes": null,
+    "rating": 13,
+    "votes": 13,
+    "submitted": "2013-08-03 12:32:25",
+    "approved": true,
+    "flagged": false,
+    "score": 14.0,
+    "tags": [
+      "#rust"
     ]
   },
   {
@@ -434,6 +880,22 @@
     ]
   },
   {
+    "id": 7058,
+    "body": "* bjz loves killing his babies",
+    "notes": null,
+    "rating": 4,
+    "votes": 14,
+    "submitted": "2013-08-24 08:10:19",
+    "approved": true,
+    "flagged": false,
+    "score": 1.6666666666666667,
+    "tags": [
+      "#rust",
+      "bjz",
+      "nocontext"
+    ]
+  },
+  {
     "id": 7065,
     "body": "<jorendorff> This sentence from a comment in the Rust runtime\n<jorendorff> \"When a task blocks, it turns its ~Task into a BlockedTask by storing a the transmuted ~Task pointer inside the KillHandle's kill flag.\"\n<jorendorff> reminds me of http://www.penny-arcade.com/comic/2010/04/19\n<till> jorendorff: that can't make sense to anybody\n<jorendorff> till: INSIDE THE KILLHANDLE'S KILL FLAG\n* jorendorff grabs till's shoulders and shakes him violently",
     "notes": "unrelated chatter removed",
@@ -444,6 +906,53 @@
     "flagged": false,
     "score": 1.3333333333333333,
     "tags": []
+  },
+  {
+    "id": 7105,
+    "body": "<lkuper_> yeah, I'm a much bigger fan of \"we are nice because it's the decent human thing to do\".  That was the point of my post -- someone shouldn't have to be a big shot in the community to be able to say \"be nice\"\n<bstrie> lkuper_: btw that will be eight social capital dollars\n<lkuper_> cha-ching!\n<bstrie> but right now I'm in canada so I'll need that in loonies",
+    "notes": "In the context of a discussion about \"Matz is nice and so we are nice\"",
+    "rating": 3,
+    "votes": 3,
+    "submitted": "2013-10-07 03:17:40",
+    "approved": true,
+    "flagged": false,
+    "score": 4.0,
+    "tags": [
+      "#rust",
+      "bstrie",
+      "lkuper"
+    ]
+  },
+  {
+    "id": 7102,
+    "body": "<amatus> >.<\n<amatus> i can't open /dev/null\n<amatus> BECAUSE IT'S NOT A FILE\n<amatus> this is the 2nd time i've coded everything up the \"rustic\" way and had to back down to raw libc calls!\n<mcpherrin> welcome to bugland, home of the bugs.  Would you like a bug with your bug?",
+    "notes": null,
+    "rating": 4,
+    "votes": 4,
+    "submitted": "2013-10-01 03:15:12",
+    "approved": true,
+    "flagged": false,
+    "score": 5.0,
+    "tags": [
+      "#rust"
+    ]
+  },
+  {
+    "id": 7066,
+    "body": "<dpc> How does RustOS sound? :D\n<tjc> sounds like a snack food :-)\n<bstrie> haha\n<bstrie> thus was the downfall of the effort to write an OS in the Dorit programming language",
+    "notes": null,
+    "rating": 9,
+    "votes": 9,
+    "submitted": "2013-09-05 17:28:37",
+    "approved": true,
+    "flagged": false,
+    "score": 10.0,
+    "tags": [
+      "#rust",
+      "bstrie",
+      "dpc",
+      "tjc"
+    ]
   },
   {
     "id": 7073,
@@ -462,6 +971,20 @@
     ]
   },
   {
+    "id": 7077,
+    "body": "<mark_edward_> ? should be unary, and return the type of a thing\n<mark_edward_> let x: int = 5; let y:x? = 1;\n<Eridius> ? should be a postfix operator that prints the value's repr to stdout\n<tikue_> i think ? should reverse the order of arguments\n<tikue_> |x| x + 1 ? spawn\n<Eridius> if you type a ?, clippy shows up and asks if you need help writing your program",
+    "notes": null,
+    "rating": 7,
+    "votes": 7,
+    "submitted": "2013-09-20 08:49:01",
+    "approved": true,
+    "flagged": false,
+    "score": 8.0,
+    "tags": [
+      "#rust"
+    ]
+  },
+  {
     "id": 7079,
     "body": "<jesseray> Sometimes, I wish there was an impure-Haskell. That would be heaven for me =P\n<slack1256> jesseray: just use unsafeIO everywhere and you are done\n<slack1256> that is what i do\n<slack1256> and my computer doesn't cra\n* slack1256 (slack@moz-B239C631.baf.movistar.cl) has left #rust (Konversation terminated!)",
     "notes": null,
@@ -476,6 +999,20 @@
     ]
   },
   {
+    "id": 7087,
+    "body": "<Jesse> rusti: \"botsnack\";\n* rusti ()\n<kimundi> rusti: version.slice_to(5).iter().map(|c| match c { 'r' => 'y', 's' => 'm', 't' | 'c' => '!', c => c}).collect::<~str>()\n* rusti ~\"yum!!\"",
+    "notes": null,
+    "rating": 10,
+    "votes": 12,
+    "submitted": "2013-09-24 13:58:24",
+    "approved": true,
+    "flagged": false,
+    "score": 6.0,
+    "tags": [
+      "#rust"
+    ]
+  },
+  {
     "id": 7095,
     "body": "<zws3mb> pastebin has syntax support for Whitespace and Brainfuck, but not for Rust!?",
     "notes": null,
@@ -486,6 +1023,40 @@
     "flagged": false,
     "score": 3.0,
     "tags": []
+  },
+  {
+    "id": 7111,
+    "body": "<eholk> this code makes me wonder if the trait system might be turing complete\n<tjc> paging Oleg",
+    "notes": null,
+    "rating": 8,
+    "votes": 8,
+    "submitted": "2013-10-12 02:06:41",
+    "approved": true,
+    "flagged": false,
+    "score": 9.0,
+    "tags": [
+      "#rust",
+      "eholk",
+      "tjc"
+    ]
+  },
+  {
+    "id": 7119,
+    "body": "<eddyb> bstrie: uint isn't unsigned int, it's uintptr_t which should be as big as size_t\n<eddyb> bstrie: uint >= uintptr_t = size_t\n<eddyb> on a 16bit system, they could decide to make (u)int 32bit, but it could be 16bit as well\n<kimundi> eddyb: Our uint and int are defined as pointer sized though\n<bstrie> kimundi: I think what eddyb is saying is that size_t isn't defined as pointer-sized\n<eddyb> bstrie: nope, it is\n* bstrie throws up his hands\n* kimundi catches bstries hands and hands them back\n* bstrie reluctantly takes back his half-digested hands",
+    "notes": null,
+    "rating": 2,
+    "votes": 4,
+    "submitted": "2013-10-17 13:49:49",
+    "approved": true,
+    "flagged": false,
+    "score": 2.0,
+    "tags": [
+      "#rust",
+      "bstrie",
+      "eddyb",
+      "ffi",
+      "kimundi"
+    ]
   },
   {
     "id": 7137,
@@ -554,6 +1125,22 @@
     "flagged": false,
     "score": 1.0,
     "tags": []
+  },
+  {
+    "id": 7187,
+    "body": "<bstrie> are there any photoshop masters out there who volunteer to shop pcwalton's head onto the marine in http://www.threeguysonejoystick.com/wp/wp-content/uploads/2011/11/Doom1-Cover.jpg , and turn all the demons into @ symbols\n<SiegeLord> ...did John Romero put an (R) symbol on his signature?\n<bstrie> SiegeLord: hahahaha\n<bstrie> I.... I think he did.",
+    "notes": null,
+    "rating": 5,
+    "votes": 5,
+    "submitted": "2014-01-09 20:49:44",
+    "approved": true,
+    "flagged": false,
+    "score": 6.0,
+    "tags": [
+      "#rust-internals",
+      "bstrie",
+      "siegelord"
+    ]
   },
   {
     "id": 7201,
@@ -629,6 +1216,99 @@
     ]
   },
   {
+    "id": 7266,
+    "body": "<mbrubeck> we could implement <iframe browser> so you can build a browser in HTML, Gaia-style\n<jdm> oppa gaia style",
+    "notes": null,
+    "rating": 3,
+    "votes": 5,
+    "submitted": "2014-04-30 22:38:38",
+    "approved": true,
+    "flagged": false,
+    "score": 2.5,
+    "tags": [
+      "#servo",
+      "gaia",
+      "gangnamstyle"
+    ]
+  },
+  {
+    "id": 7271,
+    "body": "<Ms2ger> This one always makes me happy, no matter how often I see it\n<Ms2ger>     /// This is the main entry point for receiving and dispatching DOM events.\n<Ms2ger>     /// TODO: Actually perform DOM event dispatch.",
+    "notes": null,
+    "rating": 9,
+    "votes": 9,
+    "submitted": "2014-05-13 14:34:24",
+    "approved": true,
+    "flagged": false,
+    "score": 10.0,
+    "tags": [
+      "servo"
+    ]
+  },
+  {
+    "id": 7272,
+    "body": "<jdm> woah\n<jdm> woah\n<jdm> about-mozilla just loaded and didn't crash\n<jdm> this could be big\n<jdm> crashes on shutdown, but no biggie",
+    "notes": null,
+    "rating": 9,
+    "votes": 9,
+    "submitted": "2014-05-14 18:28:03",
+    "approved": true,
+    "flagged": false,
+    "score": 10.0,
+    "tags": [
+      "servo",
+      "jdm"
+    ]
+  },
+  {
+    "id": 7278,
+    "body": "<Ms2ger> \"why's it slow? because, single-threaded why's it single-threaded? because, locks, mutable etc why's it mutable? because, performance!\"",
+    "notes": null,
+    "rating": 30,
+    "votes": 30,
+    "submitted": "2014-05-26 07:27:24",
+    "approved": true,
+    "flagged": false,
+    "score": 31.0,
+    "tags": [
+      "#rust"
+    ]
+  },
+  {
+    "id": 7284,
+    "body": "-!- jdm [jdm@moz-3D201070.cable.virginm.net] has joined #servo\n<crowbot> jdm: Ms2ger said r????\n<jdm> old news\n<jdm> when will someone want me for my mind instead of just my r+ :(\n<larsberg> jdm: it's even worse for me! I was just a standing, replacement jdm... not even as good as a real r+ from \"the\" jdm...\n<jdm> aww\n<jdm> there there, we can't all be me",
+    "notes": null,
+    "rating": 3,
+    "votes": 3,
+    "submitted": "2014-06-11 22:28:25",
+    "approved": true,
+    "flagged": false,
+    "score": 4.0,
+    "tags": [
+      "#servo",
+      "jdm",
+      "larsberg"
+    ]
+  },
+  {
+    "id": 7292,
+    "body": "<Ms2ger> glob|away, logbot seems to be gone from #servo \n<mihneadb> Ms2ger: it couldn't take it anymore\n<Ms2ger> Pah\n<mihneadb> burnout",
+    "notes": null,
+    "rating": 4,
+    "votes": 4,
+    "submitted": "2014-07-07 10:54:43",
+    "approved": true,
+    "flagged": false,
+    "score": 5.0,
+    "tags": [
+      "burnout",
+      "logbot",
+      "mihneadb",
+      "ms2ger",
+      "servo"
+    ]
+  },
+  {
     "id": 7297,
     "body": "<sfackler> acrichto: https://github.com/sfackler/rust-postgres/commit/28744034bbea218d1216808d36c58875906c0f34\n<acrichto> sfackler: woo! thanks\n<sfackler> RIP Index\n<eddyb> \"we didn't love you anyway\"\n<kimundi> haha\n<sfackler> I did ;_;",
     "notes": "Overloaded index operator changed in Rust.",
@@ -640,6 +1320,24 @@
     "score": 6.0,
     "tags": [
       "rust"
+    ]
+  },
+  {
+    "id": 7300,
+    "body": "<kmc> if Google can translate English to Arabic using a huge machine learning corpus, maybe we can translate HTML syntax to DOMs the same way ;)",
+    "notes": null,
+    "rating": 4,
+    "votes": 4,
+    "submitted": "2014-07-15 18:31:21",
+    "approved": true,
+    "flagged": false,
+    "score": 5.0,
+    "tags": [
+      "#servo",
+      "html",
+      "language",
+      "parsing",
+      "translation"
     ]
   },
   {
@@ -677,6 +1375,52 @@
     ]
   },
   {
+    "id": 7331,
+    "body": "* jdm is seeing what happens when delaying layout for as long as possible\n<jdm> ie. until a layout query is issued or we return to the event loop\n<zwarich> wait, what's the current policy?\n<jdm> HOLY CRAP THE DOM CHANGED BETTER RELAYOUT THE ENTIRE PAGE JUST IN CASE",
+    "notes": null,
+    "rating": 19,
+    "votes": 19,
+    "submitted": "2014-09-16 02:34:17",
+    "approved": true,
+    "flagged": false,
+    "score": 20.0,
+    "tags": [
+      "perf",
+      "layout",
+      "#servo"
+    ]
+  },
+  {
+    "id": 7348,
+    "body": "<bstrie> eddyb: we'll be stabilizing all comments for 1.0. code can change, but comments become part of the public API\n<bstrie> typo fixes will have to be deferred to 2.0\n<nmatsakis> bstrie: you laugh but once in an aquisition attempt...\n<nmatsakis> I had written some code to do a linaer search, or binary search, or something like that\n<nmatsakis> and I wrote \"// Super clever search algorithmn. Patent pending.\"\n<nmatsakis> and apparently this cost us many months\n<nmatsakis> where the lawyers were like\n<nmatsakis> \"patent? what patent? we didn't see that in the paperwork!\"\n<nmatsakis> our CEO told me later...",
+    "notes": null,
+    "rating": 19,
+    "votes": 19,
+    "submitted": "2014-10-30 17:27:30",
+    "approved": true,
+    "flagged": false,
+    "score": 20.0,
+    "tags": [
+      "#rust-internals"
+    ]
+  },
+  {
+    "id": 7351,
+    "body": "<bstrie> \"If this query were assigned to one of the variables used in $query, the query beast awakened.\" #officialPHPdocs\n<bstrie> Turning and turning in the widening gyre\n<bstrie> The program cannot hear the programmer;\n<bstrie> Things fall apart; the database cannot hold;\n<bstrie> Mere anarchy is loosed upon the system;\n<bstrie> The malicious query is injected, and everywhere\n<bstrie> The ceremony of security is drowned;\n<bstrie> The best lack all conviction, while the worst\n<bstrie> Wield bonafide Zend PHP Certification.\n<bstrie> The connection drops again; but now I know\n<bstrie> That twenty centuries of stony sleep(1)\n<bstrie> Were vexed to nightmare by string interpolation,\n<bstrie> And what rough beast, its hour come round at last,\n<bstrie> Slouches towards MySQL to be run?",
+    "notes": "http://php.net/manual/en/security.database.sql-injection.php",
+    "rating": 5,
+    "votes": 5,
+    "submitted": "2014-11-04 16:28:08",
+    "approved": true,
+    "flagged": false,
+    "score": 6.0,
+    "tags": [
+      "#rust-offtopic",
+      "php",
+      "yeats"
+    ]
+  },
+  {
     "id": 7371,
     "body": "<Ms2ger> Hi mdas \n<mdas> Ms2ger: hey, how's it going?\n<Ms2ger> Cursing rust, all good otherwise :)\n<nigelb> Ms2ger: I hope your sheriffing skills aren't... rusting ;)\n<Ms2ger> nigelb, you know the most appropriate music for a rust dev to listen to?\n<nigelb> Ms2ger: death metal?\n<Ms2ger> nigelb, correct",
     "notes": null,
@@ -710,6 +1454,71 @@
     ]
   },
   {
+    "id": 7390,
+    "body": "<Ms2ger> Don't you like my spec?\n<Manishearth> why is it purple",
+    "notes": "https://html5.org/specs/dom-range.html",
+    "rating": -5,
+    "votes": 13,
+    "submitted": "2015-02-03 16:43:11",
+    "approved": true,
+    "flagged": false,
+    "score": 0.5,
+    "tags": [
+      "#servo",
+      "dom",
+      "purple",
+      "standards",
+      "style"
+    ]
+  },
+  {
+    "id": 7393,
+    "body": "<larsberg> footgun status: fired\n<jdm> why do we even have a gun that fires feet\n<larsberg> how else would we fill all these clownshoes?",
+    "notes": null,
+    "rating": 19,
+    "votes": 19,
+    "submitted": "2015-02-10 19:42:59",
+    "approved": true,
+    "flagged": false,
+    "score": 20.0,
+    "tags": [
+      "#servo",
+      "clownshoes"
+    ]
+  },
+  {
+    "id": 7394,
+    "body": "<jdm> it seems like my assumptions are always invalidated by looking at the code\n<jdm> I should just not look at the code in the future",
+    "notes": null,
+    "rating": 12,
+    "votes": 12,
+    "submitted": "2015-02-10 21:48:31",
+    "approved": true,
+    "flagged": false,
+    "score": 13.0,
+    "tags": [
+      "#servo"
+    ]
+  },
+  {
+    "id": 7397,
+    "body": "<pcwalton> never did I think I would be rick rolling myself over and over as part of this job\n<larsberg> plus, if the first version of youtube media support internally redirected to Rick Astley, it would probably take a while before people learned that was all servo supported...",
+    "notes": null,
+    "rating": 5,
+    "votes": 5,
+    "submitted": "2015-02-18 01:35:20",
+    "approved": true,
+    "flagged": false,
+    "score": 6.0,
+    "tags": [
+      "larsberg",
+      "pcwalton",
+      "rick",
+      "rolling",
+      "servo"
+    ]
+  },
+  {
     "id": 7405,
     "body": "<eddyb> https://github.com/rust-lang/rfcs/pull/907 aka \"future-proof language design is hard\"\n<eddyb> but at a glance, that RFC fixes the hole in the roof by plugging it with kittens",
     "notes": null,
@@ -726,6 +1535,22 @@
     ]
   },
   {
+    "id": 7408,
+    "body": "<steveklabnik> ETE?\n<wycats> Emerging Technologies for the... Enterprise\n<steveklabnik> ahh\n<steveklabnik> neat\n<wycats> either it's a Java conference or it takes place in the Star Trek universe\n<wycats> I have gone a few times and I'm unsure which",
+    "notes": null,
+    "rating": 12,
+    "votes": 12,
+    "submitted": "2015-03-13 15:29:43",
+    "approved": true,
+    "flagged": false,
+    "score": 13.0,
+    "tags": [
+      "#rust",
+      "enterprise",
+      "startrek"
+    ]
+  },
+  {
     "id": 7409,
     "body": "<pcwalton> argh\n<pcwalton> I hate Rust",
     "notes": "Everybody says it, nobody means it.",
@@ -736,6 +1561,71 @@
     "flagged": false,
     "score": 7.0,
     "tags": []
+  },
+  {
+    "id": 7416,
+    "body": "<Manishearth> looks like jgraham from the automation team broke our automation\n<Manishearth> sabotage I tell you\n...\n<jgraham> Manishearth: It's \"automationb and tools\"\n<jgraham> In this case I was playing the role of \"tool\"",
+    "notes": "jgraham's pull request broke our bots",
+    "rating": 9,
+    "votes": 9,
+    "submitted": "2015-04-05 05:04:44",
+    "approved": true,
+    "flagged": false,
+    "score": 10.0,
+    "tags": [
+      "#servo",
+      "jgraham",
+      "manishearth"
+    ]
+  },
+  {
+    "id": 7440,
+    "body": "<Gankro> There's something deeply visceral about seeing *PR posted* *PR closed* *branch deleted* within a few hour span and no comments.\n<Gankro> The only way I think it could be better is if it was followed by *account deleted*\n<Quxxy> Gankro: Followed a few days later by a notice in the local newspaper of a man found hanging from his ceiling fan and \"git reset --hard\" scrawled on his chest in blood",
+    "notes": null,
+    "rating": 5,
+    "votes": 5,
+    "submitted": "2015-06-30 05:40:57",
+    "approved": true,
+    "flagged": false,
+    "score": 6.0,
+    "tags": [
+      "#rust-offtopic",
+      "gankro",
+      "quxxy"
+    ]
+  },
+  {
+    "id": 7447,
+    "body": "<pcwalton> got select() working on ipc-channel on Mac :)\n<pcwalton> Mach port sets \\o/\npcwalton quit (pcwalton@moz-nh2.o1i.216.216.IP) Client exited\n<jdm> every time pcwalton disappears after making some comment about mac IPC code I imagine he's triggered a new kernel oops",
+    "notes": null,
+    "rating": 7,
+    "votes": 7,
+    "submitted": "2015-07-15 18:39:30",
+    "approved": true,
+    "flagged": false,
+    "score": 8.0,
+    "tags": [
+      "#servo",
+      "e10s",
+      "macosx",
+      "oops"
+    ]
+  },
+  {
+    "id": 7453,
+    "body": "<proc> and having a vm parsing it\n<cmr> and there's a compielr.\n<eddyb> what does a compielr compiel?\n<WindowsBunny> eddyb: coed",
+    "notes": "similarities between perl and Erlang",
+    "rating": 6,
+    "votes": 6,
+    "submitted": "2015-08-18 21:53:35",
+    "approved": true,
+    "flagged": false,
+    "score": 7.0,
+    "tags": [
+      "erlang",
+      "perl",
+      "rust-offtopic"
+    ]
   },
   {
     "id": 7483,
@@ -751,6 +1641,52 @@
       "jinx",
       "coincidence",
       "#rust"
+    ]
+  },
+  {
+    "id": 7493,
+    "body": "<proc> when you doubt your code so much that you don't trust the IDE output anymore, delete the whole build and rebuild it manually..\n<rphmeier> proc: \"cargo clean && cargo build\" is just as effective :P",
+    "notes": "when the build log seems too short and error lacking",
+    "rating": 2,
+    "votes": 2,
+    "submitted": "2015-10-29 03:48:23",
+    "approved": true,
+    "flagged": false,
+    "score": 3.0,
+    "tags": [
+      "#rust"
+    ]
+  },
+  {
+    "id": 7494,
+    "body": "<pcwalton> is there a faster way to linearly interpolate varyings on a quad than to triangulate the quad and use barycentric coordinates on the triangle the point is in?\n<pcwalton> (apologies for the basic question)",
+    "notes": null,
+    "rating": 17,
+    "votes": 17,
+    "submitted": "2015-11-04 22:59:58",
+    "approved": true,
+    "flagged": false,
+    "score": 18.0,
+    "tags": [
+      "#servo",
+      "gfx",
+      "opengl",
+      "technobabble"
+    ]
+  },
+  {
+    "id": 7506,
+    "body": "* WindowsBunny installs bunny toolbar\n<WindowsBunny> which actually isn't a toolbar\n<WindowsBunny> it just causes bunnies to hop around websites inside your browser\n<proc> ff bunny theme, animated\n<WindowsBunny> that would be an _awesome_ extension\n<WindowsBunny> they'd climb on various page elements\n<WindowsBunny> nibbling the corners off of images\n<proc> WindowsBunny: as long as they don't click on them\n<WindowsBunny> proc: You can also pet the bunnies with the mouse cursor\n<proc> WindowsBunny: cookie-clicker is out of the league with that \n<WindowsBunny> I'll probably have to have a button on one of the toolbars though where you can go to get more bunnies or get food to feed them\n<proc> WindowsBunny: think of them climbing between the layers of youtube-videos\n<proc> WindowsBunny: but only for money :P\n<proc> and if you don't feed em every day, you loose some\n<WindowsBunny> proc: I'll be rich from microtransactions\n<proc> WindowsBunny: implemented as an microservice\n<WindowsBunny> damnit, now I really want to make this extension",
+    "notes": null,
+    "rating": 2,
+    "votes": 2,
+    "submitted": "2015-12-05 02:28:41",
+    "approved": true,
+    "flagged": false,
+    "score": 3.0,
+    "tags": [
+      "#rust-offtopic",
+      "#windowsbunny"
     ]
   },
   {
@@ -778,6 +1714,20 @@
     "flagged": false,
     "score": 7.0,
     "tags": []
+  },
+  {
+    "id": 7534,
+    "body": "<kamalmarhubi> where can I get started with profiling compilation\n<Mutabah> kamalmarhubi: -C time-passes iirc\n<Kingsqueeee> Mutabah: that's a pretty zen sounding flag",
+    "notes": null,
+    "rating": 4,
+    "votes": 4,
+    "submitted": "2016-04-30 05:02:59",
+    "approved": true,
+    "flagged": false,
+    "score": 5.0,
+    "tags": [
+      "#rust"
+    ]
   },
   {
     "id": 7538,
@@ -816,6 +1766,55 @@
     ]
   },
   {
+    "id": 7543,
+    "body": "<pcwalton> ignore the fact that the FPS is low in both cases; that’s because my test app draws a ton of doges on the CPU",
+    "notes": null,
+    "rating": 8,
+    "votes": 8,
+    "submitted": "2016-05-26 21:16:38",
+    "approved": true,
+    "flagged": false,
+    "score": 9.0,
+    "tags": [
+      "#servo",
+      "doge",
+      "performance"
+    ]
+  },
+  {
+    "id": 7546,
+    "body": "<ajeffrey> jgraham: (why are we whispering?)\n<jdm> spec editors lurk under every bridge\n<jdm> they have very sharp hearing\n<ajeffrey> jdm: okay, at least you are validating my confusion :)\n<ajeffrey> jdm: do spec editors eat goats?\n<jdm> yes, to reduce our supply of sacrificial ones\n<jdm> which limits our ability to divine the spec's true intentions",
+    "notes": null,
+    "rating": 5,
+    "votes": 5,
+    "submitted": "2016-06-08 15:07:55",
+    "approved": true,
+    "flagged": false,
+    "score": 6.0,
+    "tags": [
+      "#servo",
+      "ajeffrey",
+      "jdm",
+      "specs"
+    ]
+  },
+  {
+    "id": 7548,
+    "body": "<pcwalton> I don’t want to make a decision like this with measurements.",
+    "notes": null,
+    "rating": 5,
+    "votes": 5,
+    "submitted": "2016-06-21 12:45:06",
+    "approved": true,
+    "flagged": false,
+    "score": 6.0,
+    "tags": [
+      "data",
+      "measurements",
+      "servo"
+    ]
+  },
+  {
     "id": 7557,
     "body": "<breeden_> i feel like we should get a @rust-lang/offtopic team\n<scott> haha\n<ubsan> breeden_ :+1:\n<scott> i demand offtopic meetings\n<Havvy> breeden_:  That'd be hilarious.\n<scott> any mis-filed issue will be assigned to the offtopic team\n<Havvy> scott:  So we'll be the ones that deal with issues about Rust-game?\n<scott> anything about the Rust game is the offtopic team's domain\n<scott> :thumbs up emoji:\n* Havvy claps.\n<scott> an RFC about forming the offtopic team would be blocked on account of only the offtopic team having authority to merge it\n<scott> since it's utterly frivolous\n\n[later]\n\n<scott> offtopic team members should have to use nixos\n<dikaiosune> scott: there's an offtopic team?\n<Havvy> scott:  Except WinBunny?\n<dikaiosune> if so, i vote temple os\n<scott> dikaiosune: it was proposed earlier today\n<dikaiosune> i will kill everyone in my way to being on the offtopic team.\n<curtism> TempleOS is a fine piece of software\n<scott> dikaiosune: good\n<curtism> dikaiosune: Not if I kill you first\n<Havvy> dikaiosune:  The proposal for the offtopic team would be approved by the offtopic team after the offtopic team was created.\n<dikaiosune> Havvy: so it must be approved by fiat\n<dikaiosune> I SO APPROVE\n<Havvy> dikaiosune:  It's more approved via time loop.\n<scott> curtism: i wasn't happy about it either\n<dikaiosune> Havvy: that was my future self approving it, they're gone now\n<dikaiosune> it was really weird, almost created a paradox",
     "notes": "#rust-offtopic",
@@ -829,6 +1828,38 @@
       "offtopic",
       "rust",
       "team"
+    ]
+  },
+  {
+    "id": 7571,
+    "body": "<Ixrec> and from misuses of event systems\n<Ixrec> our internal framework had events before it had promises so that happened quite a bit\n<Ixrec> so much fun writing tests that call foo() and then wait for an event to get fired\n<Ixrec> then I realize I have to start waiting for the event *before* I call foo()\n<Ixrec> or else it never fires and the test times out\n<fmtq> Ixrec: hahaha you tried to unit test it\n<Ixrec> we *do* unit test it!",
+    "notes": "Talking about JS and rewriting event based code to promises",
+    "rating": 1,
+    "votes": 1,
+    "submitted": "2016-09-24 12:36:09",
+    "approved": true,
+    "flagged": false,
+    "score": 2.0,
+    "tags": [
+      "events",
+      "js",
+      "promises",
+      "rust-offtopic"
+    ]
+  },
+  {
+    "id": 7572,
+    "body": "<spudowiar> * the pin drop echoes *\n<sp3d> shhh\n<jonas> What happened next?\n<spudowiar> jonas: I stepped on the pin\n<durka42> error: attempted use of pin after drop",
+    "notes": null,
+    "rating": 9,
+    "votes": 9,
+    "submitted": "2016-10-06 18:21:44",
+    "approved": true,
+    "flagged": false,
+    "score": 10.0,
+    "tags": [
+      "#rust",
+      "error"
     ]
   },
   {
@@ -847,6 +1878,53 @@
     ]
   },
   {
+    "id": 7581,
+    "body": "<SimonSapin> I’m tempted to return my new micro-wave oven to the store\n<SimonSapin> because of bad kerning\n<SimonSapin> it has a four-digit display like xx:yy, fairly standard\n<SimonSapin> but there’s too much space on either side of the \":\"\n<SimonSapin> and every time I see it I hate it",
+    "notes": "First world problems.",
+    "rating": 9,
+    "votes": 9,
+    "submitted": "2017-01-14 10:02:43",
+    "approved": true,
+    "flagged": false,
+    "score": 10.0,
+    "tags": [
+      "#servo-offtopic"
+    ]
+  },
+  {
+    "id": 7587,
+    "body": "<mqudsi> Is there anything prettier than Result<Option<T>,E>?\n<mqudsi> In particular, the syntax for return Ok(Some(value)) makes me want to cry :(\n<mbrubeck> I think that I shall never see\n<mbrubeck> a poem as pretty as Result<Option<T>,E>",
+    "notes": null,
+    "rating": 9,
+    "votes": 9,
+    "submitted": "2017-04-06 23:18:15",
+    "approved": true,
+    "flagged": false,
+    "score": 10.0,
+    "tags": [
+      "#rust",
+      "poetry"
+    ]
+  },
+  {
+    "id": 7590,
+    "body": "<nox> bz: But also because when I started reading the spec,\n<nox> I'm pretty sure there was a note about them not being able to be nested,\n<nox> and a few days later, the note was gone, of course.\n<bz> nox: note:not(:not(:not(:not(:matches(spec)))))",
+    "notes": null,
+    "rating": 5,
+    "votes": 7,
+    "submitted": "2017-04-25 17:18:14",
+    "approved": true,
+    "flagged": false,
+    "score": 3.5,
+    "tags": [
+      "#servo",
+      "css",
+      "not",
+      "selectors",
+      "specs"
+    ]
+  },
+  {
     "id": 7592,
     "body": "<John-Galt> jimb: Why does all of our rust stuff only compile on one core?\n<John-Galt> I mean... pretty much the whole point of rust is to make parallelism easy, but I always wind up getting to the end of the compile and then waiting another 8 minutes for the rust stuff to finish while 7 cores sit idle...\n<agashlin>  John-Galt: because rust is irony?",
     "notes": null,
@@ -860,6 +1938,21 @@
       "agashlin",
       "john-galt",
       "rust"
+    ]
+  },
+  {
+    "id": 7593,
+    "body": "<@SimonSapin> bholley: Good news, stylo stylesheet parsing microbench just went from ~39ms to ~29ms with my WIP patch. Bad news, I don’t know why.",
+    "notes": null,
+    "rating": 9,
+    "votes": 9,
+    "submitted": "2017-08-21 13:23:48",
+    "approved": true,
+    "flagged": false,
+    "score": 10.0,
+    "tags": [
+      "#quantum",
+      "#servo"
     ]
   },
   {
@@ -893,6 +1986,35 @@
     ]
   },
   {
+    "id": 7607,
+    "body": "<durka42> I really enjoy acrichto's rapidly changing certainty levels in PR descriptions\n<durka42> > we for sure probably don't want to upstream this and otherwise it seems not too bad for now at least",
+    "notes": null,
+    "rating": 7,
+    "votes": 7,
+    "submitted": "2018-02-06 20:05:13",
+    "approved": true,
+    "flagged": false,
+    "score": 8.0,
+    "tags": [
+      "#rust"
+    ]
+  },
+  {
+    "id": 7610,
+    "body": "<mbrubeck> Pre-RFC: Rename \"attributes\" to \"hashtags\"\n<durka42> best argument for changing to @-syntax I've heard yet",
+    "notes": null,
+    "rating": 1,
+    "votes": 1,
+    "submitted": "2018-03-15 17:58:58",
+    "approved": true,
+    "flagged": false,
+    "score": 2.0,
+    "tags": [
+      "#rust",
+      "syntax"
+    ]
+  },
+  {
     "id": 7612,
     "body": "<j_ey> eval: println!(\"{:?}\", std::borrow::Cow::from(vec![1, 2, 3].into_boxed_slice()))\n-eval- error[E0277]: the trait bound `std::borrow::Cow<'_, _>: std::convert::From<std::boxed::Box<[{integer}]>>` is not satisfied\n-eval- ~~~ Full output: https://play.rust-lang.org/?gist=04234cc0057890e32c9d23c790870edc&version=stable&mode=debug\n<sebk> j_ey: I guess you have to define your own cow\n<sebk> CowSlice ?\n<j_ey> Beef<>",
     "notes": null,
@@ -904,6 +2026,66 @@
     "score": 1.2,
     "tags": [
       "rust"
+    ]
+  },
+  {
+    "id": 7613,
+    "body": "<bstrie> excel asked me if I wanted to restart in order to apply updates. I said no. in response, excel turned all text in its UI transparent. got me to restart and update. the system works!",
+    "notes": null,
+    "rating": 5,
+    "votes": 7,
+    "submitted": "2018-07-30 22:58:09",
+    "approved": true,
+    "flagged": false,
+    "score": 3.5,
+    "tags": [
+      "#bstrie",
+      "#rust-offtopic"
+    ]
+  },
+  {
+    "id": 7614,
+    "body": "<panicbit> This is a nice actual tree view https://i.imgur.com/R8iZYDL.jpg\n<panicbit> one of the many openly available\n<fmtq> you fuck\n<fmtq> I clicked this\n<panicbit> mission accomplished",
+    "notes": null,
+    "rating": 5,
+    "votes": 5,
+    "submitted": "2018-08-01 17:29:30",
+    "approved": true,
+    "flagged": false,
+    "score": 6.0,
+    "tags": [
+      "#rust-offtopic"
+    ]
+  },
+  {
+    "id": 7618,
+    "body": "<eijebong> nox: Bugs in script/ are so rewarding, I feel like every time you change something in there, it fixes 40 bugs but take 40 minutes to compile :p\n<lqd> therefore, we should make it compile slower\n<eijebong> lqd: no\n<lqd> too late im doing it",
+    "notes": null,
+    "rating": 8,
+    "votes": 8,
+    "submitted": "2018-09-17 22:51:19",
+    "approved": true,
+    "flagged": false,
+    "score": 9.0,
+    "tags": [
+      "servo"
+    ]
+  },
+  {
+    "id": 7620,
+    "body": "<Manishearth> aah the bug i am bisecting is not one bug but TWO bugs\n<mbrubeck> git trisect\n<mbrubeck> Hope that it's not a bug in ANGLE",
+    "notes": null,
+    "rating": 6,
+    "votes": 6,
+    "submitted": "2018-11-07 22:52:55",
+    "approved": true,
+    "flagged": false,
+    "score": 7.0,
+    "tags": [
+      "#servo",
+      "bisect",
+      "geometry",
+      "math"
     ]
   },
   {
