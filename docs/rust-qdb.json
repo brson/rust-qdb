@@ -57,7 +57,9 @@
     "approved": true,
     "flagged": false,
     "score": 9.0,
-    "tags": []
+    "tags": [
+      "#rust"
+    ]
   },
   {
     "id": 6581,
@@ -84,6 +86,23 @@
     "tags": []
   },
   {
+    "id": 6623,
+    "body": "<pcwalton> I think probably a constraint solver could solve it\n<pcwalton> our name resolution is kind of like sudoku\n<nmatsakis-at-FOOL> there is some work here\n<nmatsakis-at-FOOL> on reformulating constraint problems\n<nmatsakis-at-FOOL> as games\n<nmatsakis-at-FOOL> with simple interfaces like angry birds\n<nmatsakis-at-FOOL> and then have people on facebook play it\n<nmatsakis-at-FOOL> and hence type your programs for free\n<nmatsakis-at-FOOL> (not joking)\n<nmatsakis-at-FOOL> it's brilliant :)\n<pcwalton> i imagine that would make your build times rather slow\n<nmatsakis-at-FOOL> have you seen the runtimes of some of these constraint solvers?",
+    "notes": null,
+    "rating": 10,
+    "votes": 10,
+    "submitted": "2012-10-23 14:05:13",
+    "approved": true,
+    "flagged": false,
+    "score": 11.0,
+    "tags": [
+      "angry-birds",
+      "constraint-solver",
+      "rust",
+      "sudoku"
+    ]
+  },
+  {
     "id": 6624,
     "body": "<bstrie> I find it interesting that the rust repo contains the human genome\n<bstrie> should the unthinkable happen to mankind, any future civilization that manages to clone the rust repo will be able to revive our species\n<lkuper> gosh, if I'd known that the rust repo might outlive humanity, I might have not left all those FIXMEs lying around",
     "notes": null,
@@ -93,7 +112,11 @@
     "approved": true,
     "flagged": false,
     "score": 5.5,
-    "tags": []
+    "tags": [
+      "bstrie",
+      "lkuper",
+      "rust"
+    ]
   },
   {
     "id": 6636,
@@ -105,7 +128,11 @@
     "approved": true,
     "flagged": false,
     "score": 13.0,
-    "tags": []
+    "tags": [
+      "#rust",
+      "bstrie",
+      "kspaans"
+    ]
   },
   {
     "id": 6679,
@@ -117,7 +144,11 @@
     "approved": true,
     "flagged": false,
     "score": 7.0,
-    "tags": []
+    "tags": [
+      "#rust",
+      "english",
+      "fanny"
+    ]
   },
   {
     "id": 6694,
@@ -129,7 +160,11 @@
     "approved": true,
     "flagged": false,
     "score": 10.0,
-    "tags": []
+    "tags": [
+      "#rust",
+      "c++",
+      "ml"
+    ]
   },
   {
     "id": 6767,
@@ -141,7 +176,10 @@
     "approved": true,
     "flagged": false,
     "score": 10.0,
-    "tags": []
+    "tags": [
+      "bstrie",
+      "rust"
+    ]
   },
   {
     "id": 6813,
@@ -153,7 +191,9 @@
     "approved": true,
     "flagged": false,
     "score": 4.0,
-    "tags": []
+    "tags": [
+      "rust"
+    ]
   },
   {
     "id": 6816,
@@ -165,7 +205,9 @@
     "approved": true,
     "flagged": false,
     "score": 14.0,
-    "tags": []
+    "tags": [
+      "#rust"
+    ]
   },
   {
     "id": 6818,
@@ -201,7 +243,12 @@
     "approved": true,
     "flagged": false,
     "score": 7.0,
-    "tags": []
+    "tags": [
+      "#rust",
+      "bstrie",
+      "luqman",
+      "pcwalton"
+    ]
   },
   {
     "id": 6830,
@@ -213,7 +260,9 @@
     "approved": true,
     "flagged": false,
     "score": 12.0,
-    "tags": []
+    "tags": [
+      "#rust"
+    ]
   },
   {
     "id": 6863,
@@ -225,7 +274,28 @@
     "approved": true,
     "flagged": false,
     "score": 4.0,
-    "tags": []
+    "tags": [
+      "#rust",
+      "bieber",
+      "tjc"
+    ]
+  },
+  {
+    "id": 6872,
+    "body": "<Jesse_> i make sure to use at least one obscure word every time i help someone on IRC, so people don't get in the habit of thinking they can avoid using google by asking me",
+    "notes": null,
+    "rating": 30,
+    "votes": 40,
+    "submitted": "2013-04-08 22:32:28",
+    "approved": true,
+    "flagged": false,
+    "score": 6.0,
+    "tags": [
+      "#rust",
+      "google",
+      "lmgtfy",
+      "rust"
+    ]
   },
   {
     "id": 6883,
@@ -237,7 +307,9 @@
     "approved": true,
     "flagged": false,
     "score": 4.0,
-    "tags": []
+    "tags": [
+      "rust"
+    ]
   },
   {
     "id": 6933,
@@ -249,7 +321,24 @@
     "approved": true,
     "flagged": false,
     "score": 9.0,
-    "tags": []
+    "tags": [
+      "#rust",
+      "exceptions"
+    ]
+  },
+  {
+    "id": 6952,
+    "body": "<bblum> compiling the compiler takes sooooo long\n<Eridius> bblum: that's because you need to compile the compiler that compiles the compiler before you can compile the compiler",
+    "notes": "The downside of self-hosted compilers.",
+    "rating": 4,
+    "votes": 4,
+    "submitted": "2013-05-29 22:04:50",
+    "approved": true,
+    "flagged": false,
+    "score": 5.0,
+    "tags": [
+      "rust"
+    ]
   },
   {
     "id": 6961,
@@ -261,7 +350,9 @@
     "approved": true,
     "flagged": false,
     "score": 13.0,
-    "tags": []
+    "tags": [
+      "swordfighting"
+    ]
   },
   {
     "id": 6965,
@@ -273,7 +364,9 @@
     "approved": true,
     "flagged": false,
     "score": 6.0,
-    "tags": []
+    "tags": [
+      "#rust"
+    ]
   },
   {
     "id": 7016,
@@ -285,7 +378,43 @@
     "approved": true,
     "flagged": false,
     "score": 19.0,
-    "tags": []
+    "tags": [
+      "tjc",
+      "sorting",
+      "#rust"
+    ]
+  },
+  {
+    "id": 7020,
+    "body": "<engla> sully: maybe strcat knows\n<cmr> strcat: yeah, please don't get hit by a bus\n<MaikKlein1> ??\n<cmr> MaikKlein1: http://en.wikipedia.org/wiki/Bus_factor\n<engla> I guess you are fine with us others getting hit\n<thpickert> engla: Only if you *have to* get hit, in order to save strcat.",
+    "notes": null,
+    "rating": 5,
+    "votes": 5,
+    "submitted": "2013-07-17 19:19:17",
+    "approved": true,
+    "flagged": false,
+    "score": 6.0,
+    "tags": [
+      "bus",
+      "factor",
+      "rust"
+    ]
+  },
+  {
+    "id": 7036,
+    "body": "<graydon> I just feel sorry for our pointer types\n<graydon> someone tries to kill one of them every day\n<graydon> :(",
+    "notes": "During a discussion about unsafe pointers.",
+    "rating": 9,
+    "votes": 9,
+    "submitted": "2013-07-31 08:45:07",
+    "approved": true,
+    "flagged": false,
+    "score": 10.0,
+    "tags": [
+      "graydon",
+      "pointer",
+      "rust"
+    ]
   },
   {
     "id": 7054,
@@ -297,7 +426,12 @@
     "approved": true,
     "flagged": false,
     "score": 3.0,
-    "tags": []
+    "tags": [
+      "#rust",
+      "rusti",
+      "strcat",
+      "toddaaro"
+    ]
   },
   {
     "id": 7065,
@@ -312,6 +446,22 @@
     "tags": []
   },
   {
+    "id": 7073,
+    "body": "<tjc> out of battery, 'night all!\n<strcat> irrefutable proof tjc is a cyborg",
+    "notes": null,
+    "rating": 4,
+    "votes": 4,
+    "submitted": "2013-09-16 11:37:22",
+    "approved": true,
+    "flagged": false,
+    "score": 5.0,
+    "tags": [
+      "rust",
+      "strcat",
+      "tjc"
+    ]
+  },
+  {
     "id": 7079,
     "body": "<jesseray> Sometimes, I wish there was an impure-Haskell. That would be heaven for me =P\n<slack1256> jesseray: just use unsafeIO everywhere and you are done\n<slack1256> that is what i do\n<slack1256> and my computer doesn't cra\n* slack1256 (slack@moz-B239C631.baf.movistar.cl) has left #rust (Konversation terminated!)",
     "notes": null,
@@ -321,7 +471,9 @@
     "approved": true,
     "flagged": false,
     "score": 4.0,
-    "tags": []
+    "tags": [
+      "rust"
+    ]
   },
   {
     "id": 7095,
@@ -345,7 +497,9 @@
     "approved": true,
     "flagged": false,
     "score": 13.0,
-    "tags": []
+    "tags": [
+      "#rust"
+    ]
   },
   {
     "id": 7150,
@@ -369,7 +523,11 @@
     "approved": true,
     "flagged": false,
     "score": 1.5,
-    "tags": []
+    "tags": [
+      "#rust",
+      "cmr",
+      "github"
+    ]
   },
   {
     "id": 7163,
@@ -381,7 +539,9 @@
     "approved": true,
     "flagged": false,
     "score": 6.0,
-    "tags": []
+    "tags": [
+      "#rust"
+    ]
   },
   {
     "id": 7174,
@@ -405,7 +565,9 @@
     "approved": true,
     "flagged": false,
     "score": 8.0,
-    "tags": []
+    "tags": [
+      "rust"
+    ]
   },
   {
     "id": 7202,
@@ -417,7 +579,11 @@
     "approved": true,
     "flagged": false,
     "score": 1.4999999999999998,
-    "tags": []
+    "tags": [
+      "dherman",
+      "programming",
+      "typos"
+    ]
   },
   {
     "id": 7220,
@@ -429,7 +595,9 @@
     "approved": true,
     "flagged": false,
     "score": 19.0,
-    "tags": []
+    "tags": [
+      "#rust"
+    ]
   },
   {
     "id": 7252,
@@ -444,6 +612,23 @@
     "tags": []
   },
   {
+    "id": 7253,
+    "body": "<cajbir> hopefully nrc's gecko skills havent...rusted",
+    "notes": null,
+    "rating": 12,
+    "votes": 12,
+    "submitted": "2014-04-08 05:30:25",
+    "approved": true,
+    "flagged": false,
+    "score": 13.0,
+    "tags": [
+      "cajbir",
+      "gecko",
+      "nrc",
+      "rust"
+    ]
+  },
+  {
     "id": 7297,
     "body": "<sfackler> acrichto: https://github.com/sfackler/rust-postgres/commit/28744034bbea218d1216808d36c58875906c0f34\n<acrichto> sfackler: woo! thanks\n<sfackler> RIP Index\n<eddyb> \"we didn't love you anyway\"\n<kimundi> haha\n<sfackler> I did ;_;",
     "notes": "Overloaded index operator changed in Rust.",
@@ -453,7 +638,25 @@
     "approved": true,
     "flagged": false,
     "score": 6.0,
-    "tags": []
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "id": 7310,
+    "body": "<arrrrrrrrr> the stdlib contains too many jokes to fit on embedded devices",
+    "notes": null,
+    "rating": 6,
+    "votes": 6,
+    "submitted": "2014-08-02 19:39:08",
+    "approved": true,
+    "flagged": false,
+    "score": 7.0,
+    "tags": [
+      "jokes",
+      "rust",
+      "stdlib"
+    ]
   },
   {
     "id": 7314,
@@ -465,7 +668,13 @@
     "approved": true,
     "flagged": false,
     "score": 0.5555555555555556,
-    "tags": []
+    "tags": [
+      "food",
+      "hungry",
+      "jgraham",
+      "jonco",
+      "rust"
+    ]
   },
   {
     "id": 7371,
@@ -477,7 +686,12 @@
     "approved": true,
     "flagged": false,
     "score": 1.4285714285714286,
-    "tags": []
+    "tags": [
+      "mdas",
+      "metal",
+      "ms2ger",
+      "rust"
+    ]
   },
   {
     "id": 7378,
@@ -489,7 +703,11 @@
     "approved": true,
     "flagged": false,
     "score": 0.8333333333333334,
-    "tags": []
+    "tags": [
+      "closures",
+      "p=np",
+      "rust"
+    ]
   },
   {
     "id": 7405,
@@ -501,7 +719,11 @@
     "approved": true,
     "flagged": false,
     "score": 2.5,
-    "tags": []
+    "tags": [
+      "#rust",
+      "eddyb",
+      "kittens"
+    ]
   },
   {
     "id": 7409,
@@ -525,7 +747,11 @@
     "approved": true,
     "flagged": false,
     "score": 2.0,
-    "tags": []
+    "tags": [
+      "jinx",
+      "coincidence",
+      "#rust"
+    ]
   },
   {
     "id": 7521,
@@ -537,7 +763,9 @@
     "approved": true,
     "flagged": false,
     "score": 15.0,
-    "tags": []
+    "tags": [
+      "introduction"
+    ]
   },
   {
     "id": 7528,
@@ -552,6 +780,23 @@
     "tags": []
   },
   {
+    "id": 7538,
+    "body": "<ajeffrey> I can see your argument about not using ho functions for side-effects,\n<ajeffrey> as it makes the control flow, er, difficult to follow.\n<Ms2ger> \"ho functions\", huh\n<ajeffrey> 4th order functions are ho ho ho functions.\n<nox> Santa functions.\n<ajeffrey> the borrow checker knows if you've been naughty or nice.",
+    "notes": null,
+    "rating": 3,
+    "votes": 13,
+    "submitted": "2016-05-09 15:00:46",
+    "approved": true,
+    "flagged": false,
+    "score": 1.5,
+    "tags": [
+      "#servo",
+      "christmas",
+      "fp",
+      "rust"
+    ]
+  },
+  {
     "id": 7541,
     "body": "<KiChjang> my favourite episode of Rust Wars is Episode IV: A New Homu",
     "notes": null,
@@ -561,7 +806,14 @@
     "approved": true,
     "flagged": false,
     "score": 0.3333333333333333,
-    "tags": []
+    "tags": [
+      "#servo",
+      "bors",
+      "homu",
+      "movies",
+      "rust",
+      "starwars"
+    ]
   },
   {
     "id": 7557,
@@ -573,7 +825,11 @@
     "approved": true,
     "flagged": false,
     "score": 0.9166666666666666,
-    "tags": []
+    "tags": [
+      "offtopic",
+      "rust",
+      "team"
+    ]
   },
   {
     "id": 7577,
@@ -585,7 +841,10 @@
     "approved": true,
     "flagged": false,
     "score": 3.5,
-    "tags": []
+    "tags": [
+      "#rust-offtopic",
+      "rust"
+    ]
   },
   {
     "id": 7592,
@@ -597,7 +856,11 @@
     "approved": true,
     "flagged": false,
     "score": 7.0,
-    "tags": []
+    "tags": [
+      "agashlin",
+      "john-galt",
+      "rust"
+    ]
   },
   {
     "id": 7594,
@@ -609,7 +872,11 @@
     "approved": true,
     "flagged": false,
     "score": 1.0588235294117647,
-    "tags": []
+    "tags": [
+      "#game",
+      "#rust",
+      "#rust-internals"
+    ]
   },
   {
     "id": 7596,
@@ -621,7 +888,9 @@
     "approved": true,
     "flagged": false,
     "score": 14.0,
-    "tags": []
+    "tags": [
+      "#rust"
+    ]
   },
   {
     "id": 7612,
@@ -633,7 +902,9 @@
     "approved": true,
     "flagged": false,
     "score": 1.2,
-    "tags": []
+    "tags": [
+      "rust"
+    ]
   },
   {
     "id": 7622,
@@ -645,7 +916,26 @@
     "approved": true,
     "flagged": false,
     "score": 0.6666666666666666,
-    "tags": []
+    "tags": [
+      "#developers"
+    ]
+  },
+  {
+    "id": 7630,
+    "body": "<@chutten> Why didn't the compiler catch it?\n<@janerik> well ... if written ... the easy way the compiler _did_ catch it and told me it's never-ending recursive\n<@janerik> then I tried to outsmart the compiler\n<@janerik> turns out I'm not smarter than the compiler",
+    "notes": null,
+    "rating": 6,
+    "votes": 32,
+    "submitted": "2019-09-09 13:32:56",
+    "approved": true,
+    "flagged": false,
+    "score": 1.4285714285714286,
+    "tags": [
+      "compiler",
+      "recursion",
+      "rust",
+      "smart"
+    ]
   },
   {
     "id": 7633,
@@ -657,7 +947,9 @@
     "approved": true,
     "flagged": false,
     "score": 0.8125,
-    "tags": []
+    "tags": [
+      "#rust-offtopic"
+    ]
   },
   {
     "id": 7635,

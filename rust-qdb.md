@@ -1,6 +1,6 @@
 # Rust Quotes from Mozilla QDB
 
-Total quotes: 56
+Total quotes: 66
 
 ---
 
@@ -85,6 +85,7 @@ Total quotes: 56
 - **Score:** 9.00
 - **Submitted:** 2012-07-19 17:58:13
 - **Approved:** true
+- **Tags:** #rust
 
 ---
 
@@ -118,6 +119,31 @@ Total quotes: 56
 
 ---
 
+## Quote #6623
+
+```
+<pcwalton> I think probably a constraint solver could solve it
+<pcwalton> our name resolution is kind of like sudoku
+<nmatsakis-at-FOOL> there is some work here
+<nmatsakis-at-FOOL> on reformulating constraint problems
+<nmatsakis-at-FOOL> as games
+<nmatsakis-at-FOOL> with simple interfaces like angry birds
+<nmatsakis-at-FOOL> and then have people on facebook play it
+<nmatsakis-at-FOOL> and hence type your programs for free
+<nmatsakis-at-FOOL> (not joking)
+<nmatsakis-at-FOOL> it's brilliant :)
+<pcwalton> i imagine that would make your build times rather slow
+<nmatsakis-at-FOOL> have you seen the runtimes of some of these constraint solvers?
+```
+
+- **Rating:** 10 (10 votes)
+- **Score:** 11.00
+- **Submitted:** 2012-10-23 14:05:13
+- **Approved:** true
+- **Tags:** angry-birds, constraint-solver, rust, sudoku
+
+---
+
 ## Quote #6624
 
 ```
@@ -130,6 +156,7 @@ Total quotes: 56
 - **Score:** 5.50
 - **Submitted:** 2012-10-23 18:54:12
 - **Approved:** true
+- **Tags:** bstrie, lkuper, rust
 
 ---
 
@@ -145,6 +172,7 @@ Total quotes: 56
 - **Score:** 13.00
 - **Submitted:** 2012-10-31 18:08:22
 - **Approved:** true
+- **Tags:** #rust, bstrie, kspaans
 
 ---
 
@@ -176,6 +204,7 @@ Total quotes: 56
 - **Score:** 7.00
 - **Submitted:** 2012-11-26 16:30:43
 - **Approved:** true
+- **Tags:** #rust, english, fanny
 
 **Notes:** http://en.wikipedia.org/wiki/Fanny#In_slang
 
@@ -198,6 +227,7 @@ Total quotes: 56
 - **Score:** 10.00
 - **Submitted:** 2012-12-05 01:42:36
 - **Approved:** true
+- **Tags:** #rust, c++, ml
 
 ---
 
@@ -212,6 +242,7 @@ Total quotes: 56
 - **Score:** 10.00
 - **Submitted:** 2013-01-28 17:09:55
 - **Approved:** true
+- **Tags:** bstrie, rust
 
 ---
 
@@ -225,6 +256,7 @@ Total quotes: 56
 - **Score:** 4.00
 - **Submitted:** 2013-02-26 18:45:56
 - **Approved:** true
+- **Tags:** rust
 
 ---
 
@@ -239,6 +271,7 @@ Total quotes: 56
 - **Score:** 14.00
 - **Submitted:** 2013-02-28 13:42:24
 - **Approved:** true
+- **Tags:** #rust
 
 **Notes:** http://en.wikipedia.org/wiki/Levenshtein_distance
 
@@ -299,6 +332,7 @@ Total quotes: 56
 - **Score:** 7.00
 - **Submitted:** 2013-03-06 02:14:06
 - **Approved:** true
+- **Tags:** #rust, bstrie, luqman, pcwalton
 
 ---
 
@@ -312,6 +346,7 @@ Total quotes: 56
 - **Score:** 12.00
 - **Submitted:** 2013-03-07 21:34:50
 - **Approved:** true
+- **Tags:** #rust
 
 **Notes:** bstrie explaining ownership semantics in rust
 
@@ -335,6 +370,21 @@ Total quotes: 56
 - **Score:** 4.00
 - **Submitted:** 2013-04-02 20:46:24
 - **Approved:** true
+- **Tags:** #rust, bieber, tjc
+
+---
+
+## Quote #6872
+
+```
+<Jesse_> i make sure to use at least one obscure word every time i help someone on IRC, so people don't get in the habit of thinking they can avoid using google by asking me
+```
+
+- **Rating:** 30 (40 votes)
+- **Score:** 6.00
+- **Submitted:** 2013-04-08 22:32:28
+- **Approved:** true
+- **Tags:** #rust, google, lmgtfy, rust
 
 ---
 
@@ -351,6 +401,7 @@ Total quotes: 56
 - **Score:** 4.00
 - **Submitted:** 2013-04-17 16:25:58
 - **Approved:** true
+- **Tags:** rust
 
 ---
 
@@ -364,6 +415,24 @@ Total quotes: 56
 - **Score:** 9.00
 - **Submitted:** 2013-05-21 20:21:13
 - **Approved:** true
+- **Tags:** #rust, exceptions
+
+---
+
+## Quote #6952
+
+```
+<bblum> compiling the compiler takes sooooo long
+<Eridius> bblum: that's because you need to compile the compiler that compiles the compiler before you can compile the compiler
+```
+
+- **Rating:** 4 (4 votes)
+- **Score:** 5.00
+- **Submitted:** 2013-05-29 22:04:50
+- **Approved:** true
+- **Tags:** rust
+
+**Notes:** The downside of self-hosted compilers.
 
 ---
 
@@ -380,6 +449,7 @@ Total quotes: 56
 - **Score:** 13.00
 - **Submitted:** 2013-06-05 22:09:52
 - **Approved:** true
+- **Tags:** swordfighting
 
 ---
 
@@ -395,6 +465,7 @@ Total quotes: 56
 - **Score:** 6.00
 - **Submitted:** 2013-06-06 19:36:16
 - **Approved:** true
+- **Tags:** #rust
 
 ---
 
@@ -418,6 +489,44 @@ Total quotes: 56
 - **Score:** 19.00
 - **Submitted:** 2013-07-11 21:18:49
 - **Approved:** true
+- **Tags:** tjc, sorting, #rust
+
+---
+
+## Quote #7020
+
+```
+<engla> sully: maybe strcat knows
+<cmr> strcat: yeah, please don't get hit by a bus
+<MaikKlein1> ??
+<cmr> MaikKlein1: http://en.wikipedia.org/wiki/Bus_factor
+<engla> I guess you are fine with us others getting hit
+<thpickert> engla: Only if you *have to* get hit, in order to save strcat.
+```
+
+- **Rating:** 5 (5 votes)
+- **Score:** 6.00
+- **Submitted:** 2013-07-17 19:19:17
+- **Approved:** true
+- **Tags:** bus, factor, rust
+
+---
+
+## Quote #7036
+
+```
+<graydon> I just feel sorry for our pointer types
+<graydon> someone tries to kill one of them every day
+<graydon> :(
+```
+
+- **Rating:** 9 (9 votes)
+- **Score:** 10.00
+- **Submitted:** 2013-07-31 08:45:07
+- **Approved:** true
+- **Tags:** graydon, pointer, rust
+
+**Notes:** During a discussion about unsafe pointers.
 
 ---
 
@@ -437,6 +546,7 @@ toddaaro> rusti: 2^8
 - **Score:** 3.00
 - **Submitted:** 2013-08-22 03:54:01
 - **Approved:** true
+- **Tags:** #rust, rusti, strcat, toddaaro
 
 ---
 
@@ -460,6 +570,21 @@ toddaaro> rusti: 2^8
 
 ---
 
+## Quote #7073
+
+```
+<tjc> out of battery, 'night all!
+<strcat> irrefutable proof tjc is a cyborg
+```
+
+- **Rating:** 4 (4 votes)
+- **Score:** 5.00
+- **Submitted:** 2013-09-16 11:37:22
+- **Approved:** true
+- **Tags:** rust, strcat, tjc
+
+---
+
 ## Quote #7079
 
 ```
@@ -474,6 +599,7 @@ toddaaro> rusti: 2^8
 - **Score:** 4.00
 - **Submitted:** 2013-09-22 01:55:45
 - **Approved:** true
+- **Tags:** rust
 
 ---
 
@@ -505,6 +631,7 @@ toddaaro> rusti: 2^8
 - **Score:** 13.00
 - **Submitted:** 2013-11-05 08:14:00
 - **Approved:** true
+- **Tags:** #rust
 
 ---
 
@@ -556,6 +683,7 @@ toddaaro> rusti: 2^8
 - **Score:** 1.50
 - **Submitted:** 2013-11-26 08:51:37
 - **Approved:** true
+- **Tags:** #rust, cmr, github
 
 ---
 
@@ -575,6 +703,7 @@ toddaaro> rusti: 2^8
 - **Score:** 6.00
 - **Submitted:** 2013-11-28 01:32:26
 - **Approved:** true
+- **Tags:** #rust
 
 **Notes:** http://en.wikipedia.org/wiki/Haskell_Curry
 
@@ -610,6 +739,7 @@ toddaaro> rusti: 2^8
 - **Score:** 8.00
 - **Submitted:** 2014-01-30 04:34:07
 - **Approved:** true
+- **Tags:** rust
 
 ---
 
@@ -629,6 +759,7 @@ toddaaro> rusti: 2^8
 - **Score:** 1.50
 - **Submitted:** 2014-01-30 05:46:35
 - **Approved:** true
+- **Tags:** dherman, programming, typos
 
 **Notes:** #sweet.js
 
@@ -650,6 +781,7 @@ toddaaro> rusti: 2^8
 - **Score:** 19.00
 - **Submitted:** 2014-02-17 19:59:55
 - **Approved:** true
+- **Tags:** #rust
 
 ---
 
@@ -671,6 +803,20 @@ toddaaro> rusti: 2^8
 
 ---
 
+## Quote #7253
+
+```
+<cajbir> hopefully nrc's gecko skills havent...rusted
+```
+
+- **Rating:** 12 (12 votes)
+- **Score:** 13.00
+- **Submitted:** 2014-04-08 05:30:25
+- **Approved:** true
+- **Tags:** cajbir, gecko, nrc, rust
+
+---
+
 ## Quote #7297
 
 ```
@@ -686,8 +832,23 @@ toddaaro> rusti: 2^8
 - **Score:** 6.00
 - **Submitted:** 2014-07-10 19:41:29
 - **Approved:** true
+- **Tags:** rust
 
 **Notes:** Overloaded index operator changed in Rust.
+
+---
+
+## Quote #7310
+
+```
+<arrrrrrrrr> the stdlib contains too many jokes to fit on embedded devices
+```
+
+- **Rating:** 6 (6 votes)
+- **Score:** 7.00
+- **Submitted:** 2014-08-02 19:39:08
+- **Approved:** true
+- **Tags:** jokes, rust, stdlib
 
 ---
 
@@ -703,6 +864,7 @@ toddaaro> rusti: 2^8
 - **Score:** 0.56
 - **Submitted:** 2014-08-13 11:17:52
 - **Approved:** true
+- **Tags:** food, hungry, jgraham, jonco, rust
 
 ---
 
@@ -722,6 +884,7 @@ toddaaro> rusti: 2^8
 - **Score:** 1.43
 - **Submitted:** 2014-12-16 08:33:55
 - **Approved:** true
+- **Tags:** mdas, metal, ms2ger, rust
 
 ---
 
@@ -735,6 +898,7 @@ toddaaro> rusti: 2^8
 - **Score:** 0.83
 - **Submitted:** 2014-12-27 04:30:16
 - **Approved:** true
+- **Tags:** closures, p=np, rust
 
 **Notes:** #rust
 
@@ -751,6 +915,7 @@ toddaaro> rusti: 2^8
 - **Score:** 2.50
 - **Submitted:** 2015-03-03 02:14:57
 - **Approved:** true
+- **Tags:** #rust, eddyb, kittens
 
 ---
 
@@ -784,6 +949,7 @@ toddaaro> rusti: 2^8
 - **Score:** 2.00
 - **Submitted:** 2015-10-09 00:04:50
 - **Approved:** true
+- **Tags:** jinx, coincidence, #rust
 
 ---
 
@@ -798,6 +964,7 @@ toddaaro> rusti: 2^8
 - **Score:** 15.00
 - **Submitted:** 2016-02-19 16:46:29
 - **Approved:** true
+- **Tags:** introduction
 
 ---
 
@@ -823,6 +990,25 @@ toddaaro> rusti: 2^8
 
 ---
 
+## Quote #7538
+
+```
+<ajeffrey> I can see your argument about not using ho functions for side-effects,
+<ajeffrey> as it makes the control flow, er, difficult to follow.
+<Ms2ger> "ho functions", huh
+<ajeffrey> 4th order functions are ho ho ho functions.
+<nox> Santa functions.
+<ajeffrey> the borrow checker knows if you've been naughty or nice.
+```
+
+- **Rating:** 3 (13 votes)
+- **Score:** 1.50
+- **Submitted:** 2016-05-09 15:00:46
+- **Approved:** true
+- **Tags:** #servo, christmas, fp, rust
+
+---
+
 ## Quote #7541
 
 ```
@@ -833,6 +1019,7 @@ toddaaro> rusti: 2^8
 - **Score:** 0.33
 - **Submitted:** 2016-05-19 16:54:29
 - **Approved:** true
+- **Tags:** #servo, bors, homu, movies, rust, starwars
 
 ---
 
@@ -876,6 +1063,7 @@ toddaaro> rusti: 2^8
 - **Score:** 0.92
 - **Submitted:** 2016-07-21 05:23:50
 - **Approved:** true
+- **Tags:** offtopic, rust, team
 
 **Notes:** #rust-offtopic
 
@@ -898,6 +1086,7 @@ toddaaro> rusti: 2^8
 - **Score:** 3.50
 - **Submitted:** 2016-12-11 06:51:18
 - **Approved:** true
+- **Tags:** #rust-offtopic, rust
 
 ---
 
@@ -913,6 +1102,7 @@ toddaaro> rusti: 2^8
 - **Score:** 7.00
 - **Submitted:** 2017-08-04 04:22:59
 - **Approved:** true
+- **Tags:** agashlin, john-galt, rust
 
 ---
 
@@ -985,6 +1175,7 @@ toddaaro> rusti: 2^8
 - **Score:** 1.06
 - **Submitted:** 2017-08-26 01:26:01
 - **Approved:** true
+- **Tags:** #game, #rust, #rust-internals
 
 **Notes:** from around 2014
 
@@ -1000,6 +1191,7 @@ toddaaro> rusti: 2^8
 - **Score:** 14.00
 - **Submitted:** 2017-09-20 16:39:04
 - **Approved:** true
+- **Tags:** #rust
 
 ---
 
@@ -1018,6 +1210,7 @@ toddaaro> rusti: 2^8
 - **Score:** 1.20
 - **Submitted:** 2018-05-27 12:00:45
 - **Approved:** true
+- **Tags:** rust
 
 ---
 
@@ -1038,6 +1231,24 @@ toddaaro> rusti: 2^8
 - **Score:** 0.67
 - **Submitted:** 2019-02-07 18:30:50
 - **Approved:** true
+- **Tags:** #developers
+
+---
+
+## Quote #7630
+
+```
+<@chutten> Why didn't the compiler catch it?
+<@janerik> well ... if written ... the easy way the compiler _did_ catch it and told me it's never-ending recursive
+<@janerik> then I tried to outsmart the compiler
+<@janerik> turns out I'm not smarter than the compiler
+```
+
+- **Rating:** 6 (32 votes)
+- **Score:** 1.43
+- **Submitted:** 2019-09-09 13:32:56
+- **Approved:** true
+- **Tags:** compiler, recursion, rust, smart
 
 ---
 
@@ -1053,6 +1264,7 @@ toddaaro> rusti: 2^8
 - **Score:** 0.81
 - **Submitted:** 2019-09-27 16:30:07
 - **Approved:** true
+- **Tags:** #rust-offtopic
 
 **Notes:** 3rd command without permissions
 

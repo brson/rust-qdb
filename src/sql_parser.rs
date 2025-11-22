@@ -33,11 +33,22 @@ pub fn parse_sql_dump(path: &str) -> Result<Vec<Quote>> {
         }
     }
 
-    // Parse tags table
+    // Parse tags table to get tag_id -> tag_name mapping
+    let mut tag_names: HashMap<u32, String> = HashMap::new();
     let tags_data = extract_table_data(&content, "tags")?;
     for row in tags_data {
-        if let Some((quote_id, tag)) = parse_tag_row(&row) {
-            tags_map.entry(quote_id).or_default().push(tag);
+        if let Some((tag_id, tag_name)) = parse_tag_name_row(&row) {
+            tag_names.insert(tag_id, tag_name);
+        }
+    }
+
+    // Parse quote_tag junction table to get quote_id -> tag_id mapping
+    let quote_tag_data = extract_table_data(&content, "quote_tag")?;
+    for row in quote_tag_data {
+        if let Some((quote_id, tag_id)) = parse_quote_tag_row(&row) {
+            if let Some(tag_name) = tag_names.get(&tag_id) {
+                tags_map.entry(quote_id).or_default().push(tag_name.clone());
+            }
         }
     }
 
@@ -165,17 +176,30 @@ fn parse_quote_row(row: &str) -> Option<Quote> {
     })
 }
 
-/// Parses a tag row tuple.
-fn parse_tag_row(row: &str) -> Option<(u32, String)> {
+/// Parses a tag name row tuple from the tags table (tag_id, tag_name).
+fn parse_tag_name_row(row: &str) -> Option<(u32, String)> {
+    let fields = parse_sql_fields(row);
+    if fields.len() < 2 {
+        return None;
+    }
+
+    let tag_id = fields[0].parse().ok()?;
+    let tag_name = unescape_sql_string(&fields[1]);
+
+    Some((tag_id, tag_name))
+}
+
+/// Parses a quote_tag junction row tuple (quote_id, tag_id).
+fn parse_quote_tag_row(row: &str) -> Option<(u32, u32)> {
     let fields = parse_sql_fields(row);
     if fields.len() < 2 {
         return None;
     }
 
     let quote_id = fields[0].parse().ok()?;
-    let tag = unescape_sql_string(&fields[1]);
+    let tag_id = fields[1].parse().ok()?;
 
-    Some((quote_id, tag))
+    Some((quote_id, tag_id))
 }
 
 /// Parses comma-separated fields from a SQL row tuple.
